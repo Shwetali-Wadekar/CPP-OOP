@@ -66,10 +66,10 @@ If you are using Eclipse for your C++ development, follow these steps to set up 
 
 If you prefer to run the projects from the command line, you can compile and run the C++ files using your preferred compiler. Here’s an example using `g++`:
 
-\`\`\`bash
+```bash
 g++ -o output_file_name source_file.cpp
 ./output_file_name
-\`\`\`
+```
 
 For more complex projects, refer to the specific project folder’s instructions.
 
