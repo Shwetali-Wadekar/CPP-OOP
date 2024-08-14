@@ -35,9 +35,9 @@ Each folder contains its own set of C++ files and is dedicated to a specific use
 
 To get started with this repository, clone it to your local machine:
 
-\`\`\`bash
+```bash
 git clone https://github.com/BhavinPrajapti/CPP-OOP.git
-\`\`\`
+```
 
 Once cloned, navigate to the folder of the project you are interested in and explore the C++ files.
 
