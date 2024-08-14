@@ -1,0 +1,15 @@
+/*
+ * VehicleFleet.h
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef VEHICLEFLEET_H_
+#define VEHICLEFLEET_H_
+
+class VehicleFleet
+{
+};
+
+#endif /* VEHICLEFLEET_H_ */

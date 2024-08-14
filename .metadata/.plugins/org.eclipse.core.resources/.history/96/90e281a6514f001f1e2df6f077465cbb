@@ -1,0 +1,22 @@
+/*
+ * ElectronicItem.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "ElectronicItem.h"
+
+ElectronicItem::ElectronicItem(const std::string &itemId,
+		const std::string &name, const std::string &description,
+		double startingPrice)
+{
+}
+
+std::string ElectronicItem::getItemType() const
+{
+}
+
+void ElectronicItem::displayInfo() const
+{
+}

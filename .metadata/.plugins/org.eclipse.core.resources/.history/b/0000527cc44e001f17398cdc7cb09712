@@ -1,0 +1,100 @@
+#include <iostream>
+#include <memory>
+#include <set>
+#include <vector>
+#include <stdexcept>
+#include <map>
+#include "Employee.h"
+#include "Department.h"
+#include "Company.h"
+#include "HRManager.h"
+#include "SalaryAdjustment.h"
+#include "CompanyException.h"
+
+using namespace std;
+
+/**
+ * Outputs the failedMessage on the console if condition is false.
+ *
+ * @param condition the condition
+ * @param failedMessage the message
+ */
+void assertTrue(bool condition, const string& failedMessage) {
+    if (!condition) {
+        cout << failedMessage << endl;
+    }
+}
+
+void employeeTests() {
+/**
+ * Tests for the Employee class. (10 points)
+ * - Create an Employee instance.
+ * - Assert the getters return the expected values.
+ * - Change the salary and assert the new value.
+ */
+	Employee rutvik("Rutvik","25",850);
+
+	assertTrue(rutvik.getId()== "25", "id getter wrong");
+	assertTrue(rutvik.getName() == "Rutvik","name getter wrong");
+	assertTrue(rutvik.getSalary() == 850,"salary getter wrong");
+
+	rutvik.setSalary(5000);
+	assertTrue(rutvik.getSalary() == 5000,"salary getter wrong");
+
+
+
+
+}
+
+void departmentTests() {
+/**
+ * Tests for the Department class. (10 points)
+ * - Create a Department instance.
+ * - Add employees to the department and assert they are added correctly.
+ * - Remove employees by ID and assert they are removed correctly.
+ * - Find employees by ID and assert the correct employee is returned.
+ */
+}
+
+void companyTests() {
+/**
+ * Tests for the Company class. (20 points)
+ * - Add departments to the company.
+ * - Add employees to departments.
+ * - Generate an employee report and assert it contains the correct details.
+ * - Calculate the total salary expenditure and assert the correct value.
+ */
+}
+
+void hrManagerTests() {
+/**
+ * Tests for the HRManager class. (10 points)
+ * - Add departments and employees via the HR manager.
+ * - Remove employees via the HR manager.
+ */
+}
+
+void salaryAdjustmentTests() {
+/**
+ * Tests for the SalaryAdjustment class. (15 points)
+ * - Adjust salaries based on performance ratings.
+ * - Assert the salaries are adjusted correctly based on the given ratings.
+ */
+}
+
+void exceptionHandleTests() {
+/**
+ * Tests for exception handling. (5 points)
+ * - Attempt to add an employee to a non-existent department and catch the exception.
+ * - Attempt to remove a non-existent employee and catch the exception.
+ */
+}
+
+void allTests() {
+    employeeTests();
+    departmentTests();
+    companyTests();
+    hrManagerTests();
+    salaryAdjustmentTests();
+    exceptionHandleTests();
+}

@@ -1,0 +1,17 @@
+/*
+ * ElectronicItem.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef ELECTRONICITEM_H_
+#define ELECTRONICITEM_H_
+
+#include "Item.h"
+
+class ElectronicItem: public Item
+{
+};
+
+#endif /* ELECTRONICITEM_H_ */

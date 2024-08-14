@@ -1,0 +1,32 @@
+/*
+ * Visitor.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Visitor.h"
+
+Visitor::Visitor(std::string name, int age)
+{
+}
+
+std::string Visitor::getName() const
+{
+}
+
+int Visitor::getAge() const
+{
+}
+
+void Visitor::visitZoo(const std::string &zooName)
+{
+}
+
+std::set<std::string> Visitor::getVisitedZoos() const
+{
+}
+
+bool Visitor::hasVisitedZoo(const std::string &zooName) const
+{
+}

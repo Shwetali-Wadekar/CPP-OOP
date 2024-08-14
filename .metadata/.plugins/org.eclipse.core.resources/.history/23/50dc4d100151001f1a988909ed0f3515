@@ -1,0 +1,15 @@
+/*
+ * Fleet.h
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef FLEET_H_
+#define FLEET_H_
+
+class Fleet
+{
+};
+
+#endif /* FLEET_H_ */

@@ -1,0 +1,113 @@
+#include <iostream>
+#include <memory>
+#include <set>
+#include <vector>
+#include <stdexcept>
+#include <Poco/DateTime.h>
+#include "Vehicle.h"
+#include "Car.h"
+#include "Motorcycle.h"
+#include "VehicleRentalSystem.h"
+#include "Customer.h"
+#include "RentalRecord.h"
+#include "VehicleException.h"
+
+using namespace std;
+
+/**
+ * Outputs the failedMessage on the console if condition is false.
+ *
+ * @param condition the condition
+ * @param failedMessage the message
+ */
+void assertTrue(bool condition, const string& failedMessage) {
+    if (!condition) {
+        cout << failedMessage << endl;
+    }
+}
+void vehicleTests(){
+/**
+ * Tests for the Vehicle class. (5 points)
+ * - Create a Vehicle instance.
+ * - Assert the getters return the expected values.
+ * - Change the availability and assert the new value.
+ */
+    //Car(const std::string& make, const std::string& model, const std::string& registrationNumber, int numberOfDoors);
+
+	Car wagonr("suzuki","lxi","GJ05-CS-8322",4);
+	Motorcycle aviator("suzuki","v","GJ05-HN-9168",124);
+
+	assertTrue(wagonr.getModel()== "lxi","getter is not sexy");
+	assertTrue(wagonr.getAvailability()==true,"car is not avaialble");
+	wagonr.setAvailability(false);
+	assertTrue(wagonr.getAvailability()==false,"car is avaialble");
+
+}
+
+void carTests(){
+/**
+ * Tests for the Car class. (5 points)
+ * - Create a Car instance.
+ * - Assert the getters return the expected values.
+ * - Assert the number of doors.
+ */
+
+}
+
+void motorcycleTests(){
+/**
+ * Tests for the Motorcycle class. (5 points)
+ * - Create a Motorcycle instance.
+ * - Assert the getters return the expected values.
+ * - Assert the engine capacity.
+ */
+
+}
+
+void customerTests(){
+/**
+ * Tests for the Customer class. (5 points)
+ * - Create a Customer instance.
+ * - Assert the getters return the expected values.
+ */
+
+}
+
+void rentalsystemTests(){
+/**
+ * Tests for the VehicleRentalSystem class. (10 points)
+ * - Add vehicles to the system.
+ * - Rent a vehicle and assert the availability changes.
+ * - Return a vehicle and assert the availability changes.
+ * - List available vehicles and assert the list is correct.
+ */
+}
+
+void RentalRecordTests(){
+/**
+ * Tests for the RentalRecord class. (10 points)
+ * - Create a RentalRecord instance.
+ * - Assert the getters return the expected values.
+ * - Calculate the rental duration and assert the correct value.
+ */
+
+}
+
+void exceptionHandleTests(){
+/**
+ * Tests for exception handling. (5 points)
+ * - Attempt to rent a non-existent vehicle and catch the exception.
+ * - Attempt to return a vehicle not rented by the customer and catch the exception.
+ */
+}
+
+void allTests(){
+
+	vehicleTests();
+	carTests();
+	motorcycleTests();
+	customerTests();
+	rentalsystemTests();
+	RentalRecordTests();
+	exceptionHandleTests();
+}

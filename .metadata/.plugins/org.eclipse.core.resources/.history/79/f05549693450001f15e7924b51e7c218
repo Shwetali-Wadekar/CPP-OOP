@@ -1,0 +1,38 @@
+/*
+ * InventoryManager.cpp
+ *
+ *  Created on: Aug 1, 2024
+ *      Author: pradh
+ */
+
+#include "InventoryManager.h"
+
+using namespace std;
+
+//    std::vector<std::unique_ptr<Warehouse>> warehouses;
+
+void InventoryManager::addWarehouse(std::unique_ptr<Warehouse> warehouse)
+{
+	warehouses.push_back(move(warehouse));
+}
+
+Warehouse* InventoryManager::findWarehouseByName(const std::string &name)
+{
+	for(auto iter=warehouses.begin() ; iter != warehouses.end() ; ++iter) {
+		if((*iter)->getName()==name) {
+			return (*iter).get();
+		}
+	}
+	return nullptr;
+}
+
+std::string InventoryManager::generateProductReport() const
+{
+	for(auto iter=warehouses.begin() ; iter != warehouses.end() ; ++iter) {
+		(*iter)->get
+	}
+}
+
+float InventoryManager::calculateTotalValue() const
+{
+}

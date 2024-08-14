@@ -1,0 +1,14 @@
+20:59:09 **** Rebuild of configuration Debug for project Exam-2022WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Account.o" "..\\myCode\\Account.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\CDAccount.o" "..\\myCode\\CDAccount.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Customer.o" "..\\myCode\\Customer.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Bank.o" "..\\myCode\\Bank.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\CurrentAccount.o" "..\\myCode\\CurrentAccount.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\SavingsAccount.o" "..\\myCode\\SavingsAccount.cpp" 
+g++ -o Exam-2022WiSe "myCode\\Account.o" "myCode\\Bank.o" "myCode\\CDAccount.o" "myCode\\CurrentAccount.o" "myCode\\Customer.o" "myCode\\SavingsAccount.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+
+20:59:37 Build Finished. 0 errors, 0 warnings. (took 28s.130ms)
+

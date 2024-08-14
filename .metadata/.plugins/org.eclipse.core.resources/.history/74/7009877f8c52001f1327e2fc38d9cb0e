@@ -1,0 +1,24 @@
+/*
+ * VehicleFleet.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#include "VehicleFleet.h"
+
+void VehicleFleet::addVehicle(std::shared_ptr<Vehicle> vehicle)
+{
+}
+
+float VehicleFleet::totalMileage() const
+{
+}
+
+int VehicleFleet::totalCapacity() const
+{
+}
+
+Vehicle* VehicleFleet::findVehicleByModel(const std::string &model) const
+{
+}

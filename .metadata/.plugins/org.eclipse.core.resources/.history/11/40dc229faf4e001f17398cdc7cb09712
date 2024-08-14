@@ -1,0 +1,17 @@
+#include "Device.h"
+
+Device::Device(const std::string &id, const std::string &name)
+{
+}
+
+Device::~Device()
+{
+}
+
+std::string Device::getId() const
+{
+}
+
+std::string Device::getName() const
+{
+}

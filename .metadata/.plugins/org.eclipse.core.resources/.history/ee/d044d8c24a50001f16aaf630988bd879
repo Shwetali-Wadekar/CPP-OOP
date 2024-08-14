@@ -1,0 +1,15 @@
+/*
+ * SmartHome.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef SMARTHOME_H_
+#define SMARTHOME_H_
+
+class SmartHome
+{
+};
+
+#endif /* SMARTHOME_H_ */

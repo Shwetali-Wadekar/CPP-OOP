@@ -1,0 +1,43 @@
+/*
+ * OrderManager.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "OrderManager.h"
+#include<stdexcept>
+void OrderManager::addOrder(unique_ptr<Order> order)
+{
+	auto found = orders.find(order->getOrderId());
+
+	if( found != orders.end() ) {
+		throw std::runtime_error("orderID already exist in the OrderManager");
+	}else {
+		orders.insert(std::make_pair(order->getOrderId(),std::move(order)));
+	}
+}
+
+void OrderManager::removeOrder(const string &orderId)
+{
+	auto found = orders.find(orderId);
+	if( found != orders.end() ) {
+		orders.erase(orderId);
+}
+}
+
+Order* OrderManager::searchByOrderId(const string &orderId) const
+{
+	auto found = orders.find(orderId);
+	if( found != orders.end() ) {
+		return found->second.get();
+	}
+
+	return nullptr;
+
+
+}
+
+vector<Order*> OrderManager::getAllOrdersSortedByDate() const
+{
+}

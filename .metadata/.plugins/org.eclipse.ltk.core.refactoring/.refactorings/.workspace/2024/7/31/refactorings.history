@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/GPT-BookStoreManagement/myCode/DuplicateSensorName.cpp" element2="/GPT-BookStoreManagement/myCode/DuplicateSensorName.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1722417648847"/>&#x0A;<refactoring comment="Delete resource &apos;GPT-LibraryHard&apos;" deleteContents="true" description="Delete resource &apos;GPT-LibraryHard&apos;" element1="/GPT-LibraryHard" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1722458876401"/>
+</session>

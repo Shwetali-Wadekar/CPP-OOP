@@ -1,0 +1,15 @@
+/*
+ * Vehicle.h
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef VEHICLE_H_
+#define VEHICLE_H_
+
+class Vehicle
+{
+};
+
+#endif /* VEHICLE_H_ */

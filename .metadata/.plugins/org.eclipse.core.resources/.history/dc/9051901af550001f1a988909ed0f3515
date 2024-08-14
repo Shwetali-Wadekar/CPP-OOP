@@ -1,0 +1,112 @@
+#include <iostream>
+#include <memory>
+#include <vector>
+#include <cassert>
+#include "Company.h"
+#include "Employee.h"
+#include "Manager.h"
+#include "Department.h"
+#include "Project.h"
+
+using namespace std;
+
+/**
+ * Outputs the failedMessage on the console if condition is false.
+ *
+ * @param condition the condition
+ * @param failedMessage the message
+ */
+void assertTrue(bool condition, const std::string& failedMessage) {
+    if (!condition) {
+        std::cout << failedMessage << std::endl;
+    }
+}
+
+/**
+ * Tests for the Employee class. (20 points)
+ */
+void employeeTests() {
+    // Create an instance of Employee
+
+    // 1. Verify the name, id, and salary retrieval.
+	Employee bhavin("bhavin",1,2150);
+	assertTrue(bhavin.getId()==1,"id not matched");
+	assertTrue(bhavin.getName()=="bhavin","name is matched");
+	assertTrue(bhavin.getSalary()==2150,"salary not matched");
+
+    // 2. Test salary update.
+	bhavin.setSalary(3150);
+	assertTrue(bhavin.getSalary()==3150,"salary not matched");
+
+}
+
+/**
+ * Tests for the Manager class. (20 points)
+ */
+void managerTests() {
+    // Create an instance of Manager
+
+    // 1. Verify the name, id, and salary retrieval.
+
+    // 2. Add team members and verify.
+
+
+
+    // 3. Verify highest-paid team member.
+
+}
+
+/**
+ * Tests for the Department class. (20 points)
+ */
+void departmentTests() {
+    // Create an instance of Department
+
+    // 1. Verify the department name retrieval.
+
+    // 2. Add employees and verify.
+
+}
+
+/**
+ * Tests for the Project class. (20 points)
+ */
+void projectTests() {
+    // Create an instance of Project
+
+
+    // 1. Verify the project name and description retrieval.
+
+
+    // 2. Add employees and verify.
+
+}
+
+/**
+ * Tests for the Company class. (20 points)
+ */
+void companyTests() {
+    // Create an instance of Company
+
+
+    // 1. Verify the company name retrieval.
+
+
+    // 2. Add departments and verify.
+
+
+    // 3. Add projects and verify.
+
+}
+
+/**
+ * Run all tests. (40 points)
+ */
+void alltest() {
+    employeeTests();
+    managerTests();
+    departmentTests();
+    projectTests();
+    companyTests();
+}
+

@@ -1,0 +1,32 @@
+/*
+ * Professor.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Professor.h"
+
+Professor::Professor(std::string name)
+{
+}
+
+void Professor::addCourse(Course *course)
+{
+}
+
+void Professor::addSpecialty(const std::string &specialty)
+{
+}
+
+std::string Professor::getName() const
+{
+}
+
+std::vector<Course*> Professor::getCourses() const
+{
+}
+
+std::set<std::string> Professor::getSpecialties() const
+{
+}

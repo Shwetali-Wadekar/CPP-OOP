@@ -1,0 +1,31 @@
+/*
+ * ShoppingCart.cpp
+ *
+ *  Created on: Jul 29, 2024
+ *      Author: pradh
+ */
+
+#include "ShoppingCart.h"
+
+void ShoppingCart::addItem(std::unique_ptr<Item> item)
+{
+}
+
+void ShoppingCart::removeItem(const std::string &name)
+{
+}
+
+float ShoppingCart::getTotalQuantity() const
+{
+}
+//ShoppingCart::ShoppingCart()
+//{
+//	// TODO Auto-generated constructor stub
+//
+//}
+//
+//ShoppingCart::~ShoppingCart()
+//{
+//	// TODO Auto-generated destructor stub
+//}
+//

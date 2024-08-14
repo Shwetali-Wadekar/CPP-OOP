@@ -1,0 +1,15 @@
+/*
+ * Mammal.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef MAMMAL_H_
+#define MAMMAL_H_
+
+class Mammal
+{
+};
+
+#endif /* MAMMAL_H_ */

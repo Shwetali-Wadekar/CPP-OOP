@@ -1,0 +1,15 @@
+/*
+ * Book.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef BOOK_H_
+#define BOOK_H_
+
+class Book
+{
+};
+
+#endif /* BOOK_H_ */

@@ -1,0 +1,15 @@
+/*
+ * Reservation.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef RESERVATION_H_
+#define RESERVATION_H_
+
+class Reservation
+{
+};
+
+#endif /* RESERVATION_H_ */

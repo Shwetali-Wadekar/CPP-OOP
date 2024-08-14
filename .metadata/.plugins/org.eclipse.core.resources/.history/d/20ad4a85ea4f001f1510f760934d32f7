@@ -1,0 +1,15 @@
+/*
+ * Course.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef COURSE_H_
+#define COURSE_H_
+
+class Course
+{
+};
+
+#endif /* COURSE_H_ */

@@ -1,0 +1,61 @@
+/*
+ * SmartHome.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "SmartHome.h"
+//    std::string address; // Address of the smart home
+//    std::map<std::string, std::shared_ptr<Appliance>> appliances; // Mapping of appliance ID to appliance
+//    std::map<std::string, std::shared_ptr<User>> users; // Mapping of user ID to user
+//    std::vector<std::unique_ptr<EnergyConsumption>> energyConsumptions; // List of energy consumption records
+SmartHome::SmartHome(std::string address) : address(address)
+{
+}
+
+std::string SmartHome::getAddress() const
+{
+	return address;
+}
+
+void SmartHome::addAppliance(std::shared_ptr<Appliance> appliance)
+{
+	auto found= appliances.find(appliance->getId());
+
+	if( found != appliances.end()) {
+
+		appliances.insert(std::make_pair(appliance->getId(),appliance));
+
+	}else {
+		std::invalid_argument("appliance already exist");
+	}
+}
+
+void SmartHome::registerUser(std::shared_ptr<User> user)
+{
+}
+
+std::shared_ptr<Appliance> SmartHome::getAppliance(
+		const std::string &applianceId) const
+{
+}
+
+void SmartHome::assignApplianceToUser(const std::string &applianceId,
+		const std::string &userId)
+{
+}
+
+void SmartHome::recordEnergyConsumption(
+		std::unique_ptr<EnergyConsumption> consumption)
+{
+}
+
+double SmartHome::totalEnergyConsumptionForUser(const std::string &userId) const
+{
+}
+
+std::vector<std::shared_ptr<Appliance> > SmartHome::getAppliancesForUser(
+		const std::string &userId) const
+{
+}

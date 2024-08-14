@@ -1,0 +1,15 @@
+/*
+ * SuiteRoom.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef SUITEROOM_H_
+#define SUITEROOM_H_
+
+class SuiteRoom
+{
+};
+
+#endif /* SUITEROOM_H_ */

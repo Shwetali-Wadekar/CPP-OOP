@@ -1,0 +1,24 @@
+/*
+ * InventoryManager.cpp
+ *
+ *  Created on: Aug 1, 2024
+ *      Author: pradh
+ */
+
+#include "InventoryManager.h"
+
+void InventoryManager::addWarehouse(std::unique_ptr<Warehouse> warehouse)
+{
+}
+
+Warehouse* InventoryManager::findWarehouseByName(const std::string &name)
+{
+}
+
+std::string InventoryManager::generateProductReport() const
+{
+}
+
+float InventoryManager::calculateTotalValue() const
+{
+}

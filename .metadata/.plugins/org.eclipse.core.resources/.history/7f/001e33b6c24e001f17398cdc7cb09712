@@ -1,0 +1,17 @@
+/*
+ * SalaryAdjustment.cpp
+ *
+ *  Created on: Jul 30, 2024
+ *      Author: pradh
+ */
+
+#include "SalaryAdjustment.h"
+
+SalaryAdjustment::SalaryAdjustment(Company &company)
+{
+}
+
+void SalaryAdjustment::adjustSalaries(const std::string &departmentName,
+		const std::map<std::string, float> &performanceRatings)
+{
+}

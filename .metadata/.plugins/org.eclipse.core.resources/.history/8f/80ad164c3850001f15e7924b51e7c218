@@ -1,0 +1,32 @@
+/*
+ * WarehouseManager.cpp
+ *
+ *  Created on: Aug 1, 2024
+ *      Author: pradh
+ */
+
+#include "WarehouseManager.h"
+
+WarehouseManager::WarehouseManager(const std::string &name,
+		InventoryManager &inventoryManager)
+{
+}
+
+std::string WarehouseManager::getName() const
+{
+}
+
+void WarehouseManager::addWarehouseToInventory(const std::string &warehouseName)
+{
+}
+
+void WarehouseManager::addProductToWarehouse(const std::string &warehouseName,
+		const std::string &productName, const std::string &productId,
+		float price)
+{
+}
+
+void WarehouseManager::removeProductFromWarehouse(
+		const std::string &warehouseName, const std::string &productId)
+{
+}

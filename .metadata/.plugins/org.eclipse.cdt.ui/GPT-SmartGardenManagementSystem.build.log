@@ -1,0 +1,13 @@
+22:39:53 **** Rebuild of configuration Debug for project GPT-SmartGardenManagementSystem ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\test.o" "..\\myCode\\test.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\MaintenanceScheduler.o" "..\\myCode\\MaintenanceScheduler.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Plant.o" "..\\myCode\\Plant.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\GardenElement.o" "..\\myCode\\GardenElement.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Fountain.o" "..\\myCode\\Fountain.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Gardener.o" "..\\myCode\\Gardener.cpp" 
+g++ -o GPT-SmartGardenManagementSystem.exe "myCode\\Fountain.o" "myCode\\GardenElement.o" "myCode\\Gardener.o" "myCode\\MaintenanceScheduler.o" "myCode\\Plant.o" "myCode\\main.o" "myCode\\test.o" 
+
+22:39:56 Build Finished. 0 errors, 0 warnings. (took 2s.842ms)
+

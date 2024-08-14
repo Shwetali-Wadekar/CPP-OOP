@@ -1,0 +1,15 @@
+/*
+ * Event.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef EVENT_H_
+#define EVENT_H_
+
+class Event
+{
+};
+
+#endif /* EVENT_H_ */

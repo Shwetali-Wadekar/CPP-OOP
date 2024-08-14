@@ -1,0 +1,46 @@
+/*
+ * ShoppingCart.cpp
+ *
+ *  Created on: Jul 29, 2024
+ *      Author: pradh
+ */
+#include <algorithm>
+#include "ShoppingCart.h"
+//    std::vector<std::unique_ptr<Item>> items;
+
+void ShoppingCart::addItem(std::unique_ptr<Item> item)
+{
+	items.push_back(std::move(item));
+}
+
+void ShoppingCart::removeItem(const std::string &name)
+{
+	bool foundFlag=false;
+	auto foundIter=items.begin();
+	for(auto iter = items.begin() ; iter != items.end() ; ++iter) {
+		if((**iter).getName() == name)	{
+			foundIter=iter;
+			foundFlag=true;
+			break;
+		}
+	}
+
+	if(foundFlag){
+		items.erase(foundIter);
+	}
+}
+
+float ShoppingCart::getTotalQuantity() const
+{
+}
+	//ShoppingCart::ShoppingCart()
+	//{
+	//	// TODO Auto-generated constructor stub
+	//
+	//}
+	//
+	//ShoppingCart::~ShoppingCart()
+	//{
+	//	// TODO Auto-generated destructor stub
+	//}
+	//

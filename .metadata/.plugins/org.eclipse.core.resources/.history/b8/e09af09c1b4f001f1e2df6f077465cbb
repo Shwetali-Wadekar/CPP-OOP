@@ -1,0 +1,17 @@
+/*
+ * AntiqueItem.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef ANTIQUEITEM_H_
+#define ANTIQUEITEM_H_
+
+#include "Item.h"
+
+class AntiqueItem: public Item
+{
+};
+
+#endif /* ANTIQUEITEM_H_ */

@@ -1,0 +1,17 @@
+/*
+ * DuplicateBookException.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef DUPLICATEBOOKEXCEPTION_H_
+#define DUPLICATEBOOKEXCEPTION_H_
+
+#include <stdexcept>
+
+class DuplicateBookException: public std::invalid_argument
+{
+};
+
+#endif /* DUPLICATEBOOKEXCEPTION_H_ */

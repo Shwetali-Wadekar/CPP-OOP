@@ -1,0 +1,32 @@
+/*
+ * EventManager.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "EventManager.h"
+
+void EventManager::addEvent(std::unique_ptr<Event> event)
+{
+}
+
+std::shared_ptr<Event> EventManager::getEvent(const std::string &title) const
+{
+}
+
+void EventManager::removeEvent(const std::string &title)
+{
+}
+
+void EventManager::listEvents() const
+{
+}
+
+void EventManager::listEvents(const std::string &description) const
+{
+}
+
+void EventManager::listEventsByKeyword(const std::string &keyword) const
+{
+}

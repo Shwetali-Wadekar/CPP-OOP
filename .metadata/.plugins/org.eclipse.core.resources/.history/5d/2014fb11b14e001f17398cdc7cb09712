@@ -1,0 +1,15 @@
+
+#include "DeviceFactory.h"
+
+std::string DeviceFactory::generateId()
+{
+}
+
+std::unique_ptr<TV> DeviceFactory::createTV(const std::string &name, int volume)
+{
+}
+
+std::unique_ptr<Speaker> DeviceFactory::createSpeaker(const std::string &name,
+		int volume)
+{
+}

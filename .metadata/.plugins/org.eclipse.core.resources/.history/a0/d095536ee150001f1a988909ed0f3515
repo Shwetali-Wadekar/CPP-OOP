@@ -1,0 +1,26 @@
+/*
+ * ComplexAppliance.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "ComplexAppliance.h"
+
+ComplexAppliance::ComplexAppliance(std::string id, std::string name,
+		double powerUsage) : Appliance(id,name) , powerUsage(powerUsage)
+{
+	isOn=0;
+}
+
+double ComplexAppliance::getEnergyConsumption(double hours) const
+{
+}
+
+bool ComplexAppliance::isActive() const
+{
+}
+
+std::string ComplexAppliance::displayDetails() const
+{
+}

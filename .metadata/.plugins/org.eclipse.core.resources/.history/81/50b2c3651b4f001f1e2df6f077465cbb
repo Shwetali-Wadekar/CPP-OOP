@@ -1,0 +1,17 @@
+/*
+ * Buyer.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef BUYER_H_
+#define BUYER_H_
+
+#include "User.h"
+
+class Buyer: public User
+{
+};
+
+#endif /* BUYER_H_ */

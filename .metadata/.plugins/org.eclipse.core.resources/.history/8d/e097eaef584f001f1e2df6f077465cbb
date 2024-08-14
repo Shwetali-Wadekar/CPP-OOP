@@ -1,0 +1,15 @@
+/*
+ * AuctionManager.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "AuctionManager.h"
+
+void AuctionManager::startAuction(const std::string &auctionId,
+		const std::shared_ptr<Item> &item)
+{
+	std::shared_ptr<Auction> auction(new Auction(auctionId,item));
+	auctions.insert(std::make_pair(auctionId,auction));
+}

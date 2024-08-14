@@ -1,0 +1,15 @@
+/*
+ * EventSystem.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef EVENTSYSTEM_H_
+#define EVENTSYSTEM_H_
+
+class EventSystem
+{
+};
+
+#endif /* EVENTSYSTEM_H_ */

@@ -1,0 +1,15 @@
+/*
+ * Student.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef STUDENT_H_
+#define STUDENT_H_
+
+class Student
+{
+};
+
+#endif /* STUDENT_H_ */

@@ -1,0 +1,7 @@
+18:29:51 **** Incremental Build of configuration Debug for project GPT-University ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o GPT-University.exe "myCode\\Course.o" "myCode\\Department.o" "myCode\\Professor.o" "myCode\\Student.o" "myCode\\University.o" "myCode\\main.o" "myCode\\tests.o" 
+
+18:29:53 Build Finished. 0 errors, 0 warnings. (took 2s.246ms)
+

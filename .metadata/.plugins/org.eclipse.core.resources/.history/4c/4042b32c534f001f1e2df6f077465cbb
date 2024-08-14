@@ -1,0 +1,20 @@
+/*
+ * Bid.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "Bid.h"
+
+Bid::Bid(const std::shared_ptr<User> &user, double amount)
+{
+}
+
+std::shared_ptr<User> Bid::getUser() const
+{
+}
+
+double Bid::getAmount() const
+{
+}

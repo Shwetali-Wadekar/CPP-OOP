@@ -1,0 +1,15 @@
+/*
+ * Room.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef ROOM_H_
+#define ROOM_H_
+
+class Room
+{
+};
+
+#endif /* ROOM_H_ */

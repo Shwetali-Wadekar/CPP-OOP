@@ -1,0 +1,20 @@
+/*
+ * StandardRoom.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "StandardRoom.h"
+
+StandardRoom::StandardRoom(const std::string &number)
+{
+}
+
+void StandardRoom::bookRoom()
+{
+}
+
+void StandardRoom::releaseRoom()
+{
+}

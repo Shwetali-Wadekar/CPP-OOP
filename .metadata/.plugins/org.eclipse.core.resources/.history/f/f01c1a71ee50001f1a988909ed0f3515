@@ -1,0 +1,28 @@
+/*
+ * Manager.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#include "Manager.h"
+
+Manager::Manager(std::string name, int id, float salary)
+{
+}
+
+void Manager::addTeamMember(std::shared_ptr<Employee> employee)
+{
+}
+
+float Manager::teamSalary() const
+{
+}
+
+std::vector<std::shared_ptr<Employee> > Manager::getTeamMembers() const
+{
+}
+
+std::shared_ptr<Employee> Manager::findHighestPaidMember() const
+{
+}

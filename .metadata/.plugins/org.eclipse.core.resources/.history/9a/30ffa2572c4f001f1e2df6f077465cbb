@@ -1,0 +1,94 @@
+/*
+ * test.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+
+#include <iostream>
+#include <memory>
+#include <set>
+#include <vector>
+#include <stdexcept>
+#include<map>
+#include "BookCatalog.h"
+#include "ShoppingCart.h"
+#include "OrderManager.h"
+
+/**
+ * Performs all tests on the bookstore system. (30 points)
+ */
+
+
+using namespace std;
+
+/**
+ * Outputs the failedMessage on the console if condition is false.
+ *
+ * @param condition the condition
+ * @param failedMessage the message
+ */
+void assertTrue(bool condition, string failedMessage) {
+	if (!condition) {
+		cout << failedMessage << endl;
+	}
+}
+
+void allTests() {
+	// Test Book class
+	// TODO: Implement tests for Book class (5 points)
+	Book b1("abc of life","bhavin","9574516057",999);
+
+	assertTrue(b1.getAuthor()=="bhavin","author is not correct");
+	assertTrue(b1.getIsbn()=="9574516057","isbn is not correct");
+	assertTrue(b1.getPrice()==999,"price is not correct");
+	assertTrue(b1.getTitle()=="abc of life","title wrong");
+
+	// Test BookCatalog class
+	// TODO: Implement tests for BookCatalog class (5 points)
+
+	Book* book1ptr=new Book("abc of life","bhavin","9574516057",999);
+	Book* book2ptr=new Book("surat love of my life","bhavin","5410239875",499);
+	Book* book3ptr=new Book("schwabish gemund the hell of Germany","rutvik","1235896475",49);
+	Book* book4ptr=new Book("mannheim the mini istambul","bhavin","9845125554",1499);
+	Book* book5ptr=new Book("learning how to write","dev","6596662211",19);
+	Book* book6ptr=new Book("xyz of philosophy","rutvik","4578541209",99);
+
+	unique_ptr<Book> book1(book1ptr);
+	unique_ptr<Book> book2(book2ptr);
+	unique_ptr<Book> book3(book3ptr);
+	unique_ptr<Book> book4(book4ptr);
+	unique_ptr<Book> book5(book5ptr);
+	unique_ptr<Book> book6(book6ptr);
+
+	BookCatalog catalog;
+	catalog.addBook(move(book1));
+	catalog.addBook(move(book2));
+	catalog.addBook(move(book3));
+	catalog.addBook(move(book4));
+	catalog.addBook(move(book5));
+	catalog.addBook(move(book6));
+
+	std::string expectedSortedTitles=["abc of life","learning how to write","mannheim the mini istambul", "schwabish gemund the hell of Germany","surat love of my life","xyz of philosophy"];
+	//};
+	vector<Book*> sortedBooks=catalog.getAllBooksSortedByTitle();
+	for(auto i:sortedBooks) {
+		cout<<i->getTitle()<<endl;
+	}
+	//catalog.searchByAuthor("bhavin")
+
+
+	// Test ShoppingCart class
+	// TODO: Implement tests for ShoppingCart class (5 points)
+
+	// Test Order class
+	// TODO: Implement tests for Order class (5 points)
+
+	// Test OrderManager class
+	// TODO: Implement tests for OrderManager class (5 points)
+
+	// Comprehensive integration tests
+	// TODO: Implement comprehensive integration tests (5 points)
+}
+

@@ -1,0 +1,28 @@
+/*
+ * Warehouse.cpp
+ *
+ *  Created on: Aug 1, 2024
+ *      Author: pradh
+ */
+
+#include "Warehouse.h"
+
+Warehouse::Warehouse(const std::string &name)
+{
+}
+
+std::string Warehouse::getName() const
+{
+}
+
+void Warehouse::addProduct(std::unique_ptr<Product> product)
+{
+}
+
+void Warehouse::removeProduct(const std::string &productId)
+{
+}
+
+Product* Warehouse::findProductById(const std::string &productId)
+{
+}

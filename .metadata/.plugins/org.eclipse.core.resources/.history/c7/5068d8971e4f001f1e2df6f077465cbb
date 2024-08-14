@@ -1,0 +1,15 @@
+/*
+ * ShoppingCart.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef SHOPPINGCART_H_
+#define SHOPPINGCART_H_
+
+class ShoppingCart
+{
+};
+
+#endif /* SHOPPINGCART_H_ */

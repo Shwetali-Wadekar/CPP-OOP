@@ -1,0 +1,15 @@
+/*
+ * TransportCompany.h
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef TRANSPORTCOMPANY_H_
+#define TRANSPORTCOMPANY_H_
+
+class TransportCompany
+{
+};
+
+#endif /* TRANSPORTCOMPANY_H_ */

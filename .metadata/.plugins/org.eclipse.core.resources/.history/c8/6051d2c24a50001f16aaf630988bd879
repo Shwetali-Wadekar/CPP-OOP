@@ -1,0 +1,15 @@
+/*
+ * EnergyConsumption.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef ENERGYCONSUMPTION_H_
+#define ENERGYCONSUMPTION_H_
+
+class EnergyConsumption
+{
+};
+
+#endif /* ENERGYCONSUMPTION_H_ */

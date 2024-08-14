@@ -1,0 +1,23 @@
+/*
+ * Student.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Student.h"
+#include "course.h"
+
+Student::Student(int id, std::string name) : id(id) , name(name)
+{
+}
+
+int Student::getId() const
+{
+	return this->id;
+}
+
+std::string Student::getName() const
+{
+	return this->name;
+}

@@ -1,0 +1,27 @@
+// Standard (system) header files
+#include <iostream>
+#include <cstdlib>
+// Add more standard header files as required
+// #include <string>
+#include <Poco/Data/Date.h>
+#include<Poco/DateTime.h>
+using namespace std;
+
+// Add your project's header files here
+// #include "CFraction.h"
+
+// Main program
+int main() {
+
+    cout << "Student Name: Bhavinkumar Prajapati, Matrikel-Nb: 1119282" << endl << endl;
+
+    extern void allTests();
+    allTests();
+    Poco::Data::Date startdate= Poco::Data::Date(2024,10,1);
+    Poco::Data::Date endend= Poco::Data::Date(2024,12,1);
+    Poco::DateTime st=startdate;
+
+     //duration= endend-startdate;
+
+    return 0;
+}

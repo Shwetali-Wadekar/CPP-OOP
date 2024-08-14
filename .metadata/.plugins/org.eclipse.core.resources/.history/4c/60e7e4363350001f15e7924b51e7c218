@@ -1,0 +1,17 @@
+/*
+ * DiscountAdjuster.cpp
+ *
+ *  Created on: Aug 1, 2024
+ *      Author: pradh
+ */
+
+#include "DiscountAdjuster.h"
+
+DiscountAdjuster& DiscountAdjuster::addDiscount(const std::string &productId,
+		float discount)
+{
+}
+
+float DiscountAdjuster::adjust(const Product &product) const
+{
+}

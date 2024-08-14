@@ -1,0 +1,19 @@
+
+#include "DeviceFactory.h"
+#include <iomanip>
+#include <sstream>
+std::string DeviceFactory::generateId()
+{
+	std::ostringstream oss;
+	oss<<std::set
+	return "DE0000"+std::to_string(idCounter)
+}
+
+std::unique_ptr<TV> DeviceFactory::createTV(const std::string &name, int volume)
+{
+}
+
+std::unique_ptr<Speaker> DeviceFactory::createSpeaker(const std::string &name,
+		int volume)
+{
+}

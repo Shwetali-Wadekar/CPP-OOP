@@ -1,0 +1,31 @@
+/*
+ * Inventory.cpp
+ *
+ *  Created on: Jul 29, 2024
+ *      Author: pradh
+ */
+
+#include "Inventory.h"
+
+void Inventory::addStock(const std::string &name, float quantity)
+{
+}
+
+void Inventory::removeStock(const std::string &name, float quantity)
+{
+}
+
+float Inventory::getStock(const std::string &name) const
+{
+}
+//Inventory::Inventory()
+//{
+//	// TODO Auto-generated constructor stub
+//
+//}
+//
+//Inventory::~Inventory()
+//{
+//	// TODO Auto-generated destructor stub
+//}
+//

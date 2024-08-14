@@ -1,0 +1,35 @@
+/*
+ * Customer.cpp
+ *
+ *  Created on: Jul 29, 2024
+ *      Author: pradh
+ */
+
+#include "Customer.h"
+
+Customer::Customer(const std::string &name)
+{
+}
+
+void Customer::addOrder(std::unique_ptr<Order> order)
+{
+}
+
+std::string Customer::getName() const
+{
+}
+
+float Customer::getTotalOrderQuantity() const
+{
+}
+//Customer::Customer()
+//{
+//	// TODO Auto-generated constructor stub
+//
+//}
+//
+//Customer::~Customer()
+//{
+//	// TODO Auto-generated destructor stub
+//}
+//

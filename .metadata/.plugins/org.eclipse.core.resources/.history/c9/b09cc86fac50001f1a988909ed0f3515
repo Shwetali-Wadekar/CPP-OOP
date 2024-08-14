@@ -1,0 +1,15 @@
+/*
+ * Project.h
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef PROJECT_H_
+#define PROJECT_H_
+
+class Project
+{
+};
+
+#endif /* PROJECT_H_ */

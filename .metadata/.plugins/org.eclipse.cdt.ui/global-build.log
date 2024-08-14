@@ -1,0 +1,105 @@
+20:18:07 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Fleet.o" "..\\myCode\\Fleet.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\FleetManager.o" "..\\myCode\\FleetManager.cpp" 
+g++ -o GPT-FleetManagement.exe "myCode\\ElectricVehicle.o" "myCode\\Fleet.o" "myCode\\FleetManager.o" "myCode\\TransportCompany.o" "myCode\\Vehicle.o" "myCode\\VehicleFleet.o" "myCode\\main.o" "myCode\\tests.o" 
+20:20:16 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void allTests()':
+..\myCode\tests.cpp:17:42: error: expected type-specifier before 'ElectricVehicle'
+   17 |         std::shared_ptr<Vehicle> ola(new ElectricVehicle("olas1",120,200,1000));
+      |                                          ^~~~~~~~~~~~~~~
+20:20:49 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void allTests()':
+..\myCode\tests.cpp:19:42: error: expected type-specifier before 'ElectricVehicle'
+   19 |         std::shared_ptr<Vehicle> ola(new ElectricVehicle("olas1",120,200,1000));
+      |                                          ^~~~~~~~~~~~~~~
+20:21:03 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o GPT-FleetManagement.exe "myCode\\ElectricVehicle.o" "myCode\\Fleet.o" "myCode\\FleetManager.o" "myCode\\TransportCompany.o" "myCode\\Vehicle.o" "myCode\\VehicleFleet.o" "myCode\\main.o" "myCode\\tests.o" 
+20:24:38 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void allTests()':
+..\myCode\tests.cpp:35:9: error: 'cout' was not declared in this scope
+   35 |         cout<<company.totalFleetMileage();
+      |         ^~~~
+20:24:56 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o GPT-FleetManagement.exe "myCode\\ElectricVehicle.o" "myCode\\Fleet.o" "myCode\\FleetManager.o" "myCode\\TransportCompany.o" "myCode\\Vehicle.o" "myCode\\VehicleFleet.o" "myCode\\main.o" "myCode\\tests.o" 
+Info: Nothing to build for GPT-FleetManagement
+20:25:41 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -o GPT-FleetManagement.exe "myCode\\ElectricVehicle.o" "myCode\\Fleet.o" "myCode\\FleetManager.o" "myCode\\TransportCompany.o" "myCode\\Vehicle.o" "myCode\\VehicleFleet.o" "myCode\\main.o" "myCode\\tests.o" 
+Info: Nothing to build for GPT-FleetManagement
+20:26:59 **** Rebuild of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\NullAdjuster.o" "..\\myCode\\NullAdjuster.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TableBasedAdjuster.o" "..\\myCode\\TableBasedAdjuster.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TestSensor.o" "..\\myCode\\TestSensor.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Adjuster.o" "..\\myCode\\Adjuster.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\LinearAdjuster.o" "..\\myCode\\LinearAdjuster.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Sensor.o" "..\\myCode\\Sensor.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\DuplicateSensorName.o" "..\\myCode\\DuplicateSensorName.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\SensorNetwork.o" "..\\myCode\\SensorNetwork.cpp" 
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+20:27:03 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o GPT-FleetManagement.exe "myCode\\ElectricVehicle.o" "myCode\\Fleet.o" "myCode\\FleetManager.o" "myCode\\TransportCompany.o" "myCode\\Vehicle.o" "myCode\\VehicleFleet.o" "myCode\\main.o" "myCode\\tests.o" 
+Info: Nothing to build for GPT-FleetManagement
+Info: Nothing to build for Exam-2023SoSe
+20:28:38 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void allTests()':
+..\myCode\tests.cpp:45:61: error: 'fleet' was not declared in this scope; did you mean 'Fleet'?
+   45 |         TransportCompany company("sai ram fleet management",fleet);
+      |                                                             ^~~~~
+      |                                                             Fleet
+Info: Nothing to build for Exam-2023SoSe
+20:29:07 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o GPT-FleetManagement.exe "myCode\\ElectricVehicle.o" "myCode\\Fleet.o" "myCode\\FleetManager.o" "myCode\\TransportCompany.o" "myCode\\Vehicle.o" "myCode\\VehicleFleet.o" "myCode\\main.o" "myCode\\tests.o" 
+Info: Nothing to build for Exam-2023SoSe
+20:31:54 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void allTests()':
+..\myCode\tests.cpp:76:27: error: too few arguments to function 'void assertTrue(bool, std::string)'
+   76 |                 assertTrue(bhavin.findCompanyByName("sai ram car fleet management"))!=nullptr,"company not added to manager");
+      |                 ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\myCode\tests.cpp:25:6: note: declared here
+   25 | void assertTrue(bool condition, string failedMessage) {
+      |      ^~~~~~~~~~
+..\myCode\tests.cpp:77:27: error: too few arguments to function 'void assertTrue(bool, std::string)'
+   77 |                 assertTrue(bhavin.findCompanyByName("sai ram car fleet management"))!=nullptr,"company not added to manager");
+      |                 ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\myCode\tests.cpp:25:6: note: declared here
+   25 | void assertTrue(bool condition, string failedMessage) {
+      |      ^~~~~~~~~~
+Info: Nothing to build for Exam-2023SoSe
+20:32:01 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o GPT-FleetManagement.exe "myCode\\ElectricVehicle.o" "myCode\\Fleet.o" "myCode\\FleetManager.o" "myCode\\TransportCompany.o" "myCode\\Vehicle.o" "myCode\\VehicleFleet.o" "myCode\\main.o" "myCode\\tests.o" 
+Info: Nothing to build for Exam-2023SoSe
+20:32:56 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o GPT-FleetManagement.exe "myCode\\ElectricVehicle.o" "myCode\\Fleet.o" "myCode\\FleetManager.o" "myCode\\TransportCompany.o" "myCode\\Vehicle.o" "myCode\\VehicleFleet.o" "myCode\\main.o" "myCode\\tests.o" 
+Info: Nothing to build for Exam-2023SoSe
+20:33:09 **** Incremental Build of configuration Debug for project GPT-FleetManagement ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o GPT-FleetManagement.exe "myCode\\ElectricVehicle.o" "myCode\\Fleet.o" "myCode\\FleetManager.o" "myCode\\TransportCompany.o" "myCode\\Vehicle.o" "myCode\\VehicleFleet.o" "myCode\\main.o" "myCode\\tests.o" 
+Info: Nothing to build for GPT-FleetManagement

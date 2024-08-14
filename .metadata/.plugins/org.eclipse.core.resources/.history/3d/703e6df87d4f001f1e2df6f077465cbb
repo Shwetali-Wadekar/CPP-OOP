@@ -1,0 +1,15 @@
+/*
+ * StandardRoom.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef STANDARDROOM_H_
+#define STANDARDROOM_H_
+
+class StandardRoom
+{
+};
+
+#endif /* STANDARDROOM_H_ */

@@ -1,0 +1,28 @@
+/*
+ * Employee.cpp
+ *
+ *  Created on: Jul 30, 2024
+ *      Author: pradh
+ */
+
+#include "Employee.h"
+
+Employee::Employee(const std::string &name, const std::string &id, float salary)
+{
+}
+
+std::string Employee::getName() const
+{
+}
+
+std::string Employee::getId() const
+{
+}
+
+float Employee::getSalary() const
+{
+}
+
+void Employee::setSalary(float salary)
+{
+}

@@ -1,0 +1,15 @@
+/*
+ * ReservationManager.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef RESERVATIONMANAGER_H_
+#define RESERVATIONMANAGER_H_
+
+class ReservationManager
+{
+};
+
+#endif /* RESERVATIONMANAGER_H_ */

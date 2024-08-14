@@ -1,0 +1,15 @@
+/*
+ * EventManager.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef EVENTMANAGER_H_
+#define EVENTMANAGER_H_
+
+class EventManager
+{
+};
+
+#endif /* EVENTMANAGER_H_ */

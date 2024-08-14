@@ -1,0 +1,46 @@
+/*
+ * Course.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Course.h"
+#include "Student.h"
+#include <stdexcept>
+Course::Course(std::string name) : name(name)
+{
+}
+
+void Course::enrollStudent(std::shared_ptr<Student> student)
+{
+	enrolledStudents.insert(std::make_pair(student->getId(),student));
+}
+
+std::string Course::getName() const
+{
+	return this->name;
+}
+//    std::map<int, std::shared_ptr<Student>> enrolledStudents; // student ID to Student pointer
+
+std::map<int, std::shared_ptr<Student> > Course::getEnrolledStudents() const
+{
+	return enrolledStudents;
+}
+
+void Course::assignGrade(int studentID, char grade)
+{
+
+}
+
+char Course::getGrade(int studentID) const
+{
+	auto found=enrolledStudents.find(studentID);
+
+	if( found != enrolledStudents.end()) {
+		Course* c=this;
+		return found->second->getGrade(c);
+	}else {
+		throw std::invalid_argument ("student does not enroll for this course");
+	}
+}

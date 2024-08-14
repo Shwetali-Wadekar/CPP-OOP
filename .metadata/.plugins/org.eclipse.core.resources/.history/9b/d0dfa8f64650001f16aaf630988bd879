@@ -1,0 +1,15 @@
+/*
+ * Visitor.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef VISITOR_H_
+#define VISITOR_H_
+
+class Visitor
+{
+};
+
+#endif /* VISITOR_H_ */

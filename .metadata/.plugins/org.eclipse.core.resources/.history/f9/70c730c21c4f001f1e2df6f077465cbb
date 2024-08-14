@@ -1,0 +1,50 @@
+#include "User.h"
+#include "Item.h"
+#include "Auction.h"
+#include "Bid.h"
+#include "AuctionManager.h"
+#include <iostream>
+#include <Poco/JSON/Parser.h>
+
+using namespace std;
+
+int main() {
+    // TODO: Implement the main program to demonstrate the auction system functionality (30 points)
+
+    cout << "Student Name: [Your Name], Matrikel-Nb: [Your Number]" << endl << endl;
+
+    // Create users
+//    auto buyer1 = make_shared<Buyer>("U001", "Alice", "alice@example.com", 1000.0);
+//    auto buyer2 = make_shared<Buyer>("U002", "Bob", "bob@example.com", 1500.0);
+//    auto seller1 = make_shared<Seller>("U003", "Charlie", "charlie@example.com", 2000.0);
+//
+//    // Create items
+//    auto item1 = make_shared<AntiqueItem>("I001", "Antique Vase", "A beautiful antique vase.", 100.0);
+//    auto item2 = make_shared<ElectronicItem>("I002", "Vintage Watch", "A vintage watch in mint condition.", 200.0);
+//
+//    // Create AuctionManager
+//    AuctionManager auctionManager;
+//
+//    // Start auctions
+//    auctionManager.startAuction("A001", item1);
+//    auctionManager.startAuction("A002", item2);
+//
+//    // Place bids
+//    auctionManager.placeBid("A001", buyer1, 150.0);
+//    auctionManager.placeBid("A001", buyer2, 200.0);
+//    auctionManager.placeBid("A002", buyer2, 250.0);
+//
+//    // End auctions
+//    auto winner1 = auctionManager.endAuction("A001");
+//    auto winner2 = auctionManager.endAuction("A002");
+//
+//    cout << "Auction A001 winner: " << winner1->getUserId() << endl;
+//    cout << "Auction A002 winner: " << winner2->getUserId() << endl;
+//
+//    // Convert objects to JSON and print
+//    cout << buyer1->toJson()->toString() << endl;
+//    cout << item1->toJson()->toString() << endl;
+//    cout << auctionManager.toJson()->toString() << endl;
+
+    return 0;
+}

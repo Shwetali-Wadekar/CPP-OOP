@@ -1,0 +1,15 @@
+/*
+ * Professor.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef PROFESSOR_H_
+#define PROFESSOR_H_
+
+class Professor
+{
+};
+
+#endif /* PROFESSOR_H_ */

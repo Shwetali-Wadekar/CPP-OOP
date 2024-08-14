@@ -1,0 +1,31 @@
+/*
+ * Order.cpp
+ *
+ *  Created on: Jul 29, 2024
+ *      Author: pradh
+ */
+
+#include "Order.h"
+
+void Order::addItem(std::unique_ptr<Item> item)
+{
+}
+
+void Order::removeItem(const std::string &name)
+{
+}
+
+float Order::getTotalQuantity() const
+{
+}
+//Order::Order()
+//{
+//	// TODO Auto-generated constructor stub
+//
+//}
+//
+//Order::~Order()
+//{
+//	// TODO Auto-generated destructor stub
+//}
+//

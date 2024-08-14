@@ -1,0 +1,31 @@
+/*
+ * VehicleRentalSystem.cpp
+ *
+ *  Created on: Jul 30, 2024
+ *      Author: pradh
+ */
+
+#include "VehicleRentalSystem.h"
+
+void VehicleRentalSystem::addVehicle(std::unique_ptr<Vehicle> vehicle)
+{
+}
+
+Vehicle* VehicleRentalSystem::findVehicleByRegistrationNumber(
+		const std::string &registrationNumber)
+{
+}
+
+void VehicleRentalSystem::rentVehicle(const std::string &registrationNumber,
+		const std::string &customerID)
+{
+}
+
+void VehicleRentalSystem::returnVehicle(const std::string &registrationNumber,
+		const std::string &customerID)
+{
+}
+
+std::vector<Vehicle*> VehicleRentalSystem::listAvailableVehicles()
+{
+}

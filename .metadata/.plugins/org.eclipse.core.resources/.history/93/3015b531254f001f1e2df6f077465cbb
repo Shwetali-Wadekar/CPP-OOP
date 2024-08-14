@@ -1,0 +1,28 @@
+/*
+ * Order.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "Order.h"
+
+Order::Order(const ShoppingCart &cart, const string &orderId)
+{
+}
+
+string Order::getOrderId() const
+{
+}
+
+double Order::getTotalCost() const
+{
+}
+
+time_t Order::getOrderDate() const
+{
+}
+
+vector<Book*> Order::getBooks() const
+{
+}

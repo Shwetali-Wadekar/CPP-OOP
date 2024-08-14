@@ -1,0 +1,32 @@
+/*
+ * Project.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#include "Project.h"
+
+Project::Project(std::string name, float budget)
+{
+}
+
+void Project::addTeamMember(std::shared_ptr<Employee> employee)
+{
+}
+
+float Project::totalSalary() const
+{
+}
+
+std::vector<std::shared_ptr<Employee> > Project::getTeamMembers() const
+{
+}
+
+std::string Project::getName() const
+{
+}
+
+float Project::remainingBudget() const
+{
+}

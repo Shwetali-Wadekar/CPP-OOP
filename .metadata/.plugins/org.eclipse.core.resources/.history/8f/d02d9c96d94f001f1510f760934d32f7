@@ -1,0 +1,17 @@
+/*
+ * ReservationManager.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "ReservationManager.h"
+
+void ReservationManager::addRoom(const std::shared_ptr<Room> &room)
+{
+}
+
+void ReservationManager::addReservation(
+		const std::shared_ptr<Reservation> &reservation)
+{
+}

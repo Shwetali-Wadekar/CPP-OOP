@@ -1,0 +1,25 @@
+/*
+ * TransportCompany.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#include "TransportCompany.h"
+
+TransportCompany::TransportCompany(std::string name,
+		std::shared_ptr<Fleet> fleet)
+{
+}
+
+std::string TransportCompany::getName() const
+{
+}
+
+float TransportCompany::totalFleetMileage() const
+{
+}
+
+int TransportCompany::totalFleetCapacity() const
+{
+}

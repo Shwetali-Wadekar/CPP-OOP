@@ -1,0 +1,15 @@
+/*
+ * FleetManager.h
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef FLEETMANAGER_H_
+#define FLEETMANAGER_H_
+
+class FleetManager
+{
+};
+
+#endif /* FLEETMANAGER_H_ */

@@ -1,0 +1,15 @@
+/*
+ * Employee.h
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef EMPLOYEE_H_
+#define EMPLOYEE_H_
+
+class Employee
+{
+};
+
+#endif /* EMPLOYEE_H_ */

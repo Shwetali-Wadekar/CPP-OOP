@@ -1,0 +1,15 @@
+/*
+ * ElectricVehicle.h
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef ELECTRICVEHICLE_H_
+#define ELECTRICVEHICLE_H_
+
+class ElectricVehicle
+{
+};
+
+#endif /* ELECTRICVEHICLE_H_ */

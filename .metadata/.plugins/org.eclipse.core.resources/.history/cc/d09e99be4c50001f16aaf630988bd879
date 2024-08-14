@@ -1,0 +1,15 @@
+/*
+ * Attendee.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef ATTENDEE_H_
+#define ATTENDEE_H_
+
+class Attendee
+{
+};
+
+#endif /* ATTENDEE_H_ */

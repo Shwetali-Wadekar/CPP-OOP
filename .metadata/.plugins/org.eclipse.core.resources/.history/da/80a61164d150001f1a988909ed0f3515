@@ -1,0 +1,29 @@
+/*
+ * Conference.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Conference.h"
+
+Conference::Conference(const std::string &title, const std::string &description,
+		const std::vector<std::string> &speakers, const std::string &location)
+{
+}
+
+void Conference::display() const
+{
+}
+
+void Conference::display(const std::string &format) const
+{
+}
+
+std::string Conference::getSpeakersAsString() const
+{
+}
+
+std::string Conference::getLocation() const
+{
+}

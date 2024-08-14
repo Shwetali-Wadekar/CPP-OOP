@@ -1,0 +1,32 @@
+/*
+ * Department.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#include "Department.h"
+
+Department::Department(std::string name)
+{
+}
+
+void Department::addEmployee(std::shared_ptr<Employee> employee)
+{
+}
+
+float Department::totalSalary() const
+{
+}
+
+std::vector<std::shared_ptr<Employee> > Department::getEmployees() const
+{
+}
+
+std::shared_ptr<Employee> Department::findEmployeeById(int id) const
+{
+}
+
+std::string Department::getName() const
+{
+}

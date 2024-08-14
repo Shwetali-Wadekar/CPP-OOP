@@ -1,0 +1,32 @@
+/*
+ * Library.cpp
+ *
+ *  Created on: 29 Jul 2024
+ *      Author: hp
+ */
+
+#include "Library.h"
+#include "Book.h"
+#include "Member.h"
+
+using namespace std;
+//    std::map<std::string, std::unique_ptr<Member>> members;
+
+Member* Library::createMember(std::string id, std::string firstName, std::string lastName)
+{
+	std::unique_ptr<Member> member = std::unique_ptr<Member>(new Member(id,firstName,lastName));
+	Member* memberPtr = member.get();
+	members.insert(make_pair(id,move(member)));
+
+	return memberPtr;
+}
+
+Member* Library::lookupMember(std::string id) const
+{
+	auto found = members.find(id);
+	if( found != members.end()) {
+		return found->second.get();
+	}else {
+		return nullptr;
+	}
+}

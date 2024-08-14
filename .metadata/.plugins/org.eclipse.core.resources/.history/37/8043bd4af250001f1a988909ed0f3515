@@ -1,0 +1,36 @@
+/*
+ * Company.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#include "Company.h"
+
+Company::Company(std::string name)
+{
+}
+
+void Company::addDepartment(std::shared_ptr<Department> department)
+{
+}
+
+void Company::addProject(std::shared_ptr<Project> project)
+{
+}
+
+float Company::totalSalary() const
+{
+}
+
+std::vector<std::shared_ptr<Department> > Company::getDepartments() const
+{
+}
+
+std::vector<std::shared_ptr<Project> > Company::getProjects() const
+{
+}
+
+float Company::totalRemainingBudget() const
+{
+}

@@ -1,0 +1,20 @@
+/*
+ * Animal.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Animal.h"
+
+Animal::Animal(std::string name, int age)
+{
+}
+
+std::string Animal::getName() const
+{
+}
+
+int Animal::getAge() const
+{
+}

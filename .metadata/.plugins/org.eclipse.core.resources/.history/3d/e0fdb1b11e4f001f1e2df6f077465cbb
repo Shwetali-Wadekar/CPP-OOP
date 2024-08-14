@@ -1,0 +1,15 @@
+/*
+ * OrderManager.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef ORDERMANAGER_H_
+#define ORDERMANAGER_H_
+
+class OrderManager
+{
+};
+
+#endif /* ORDERMANAGER_H_ */

@@ -1,0 +1,15 @@
+/*
+ * Bird.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef BIRD_H_
+#define BIRD_H_
+
+class Bird
+{
+};
+
+#endif /* BIRD_H_ */

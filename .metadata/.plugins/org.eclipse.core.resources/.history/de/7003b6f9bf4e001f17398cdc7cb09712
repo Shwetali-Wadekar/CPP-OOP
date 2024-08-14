@@ -1,0 +1,16 @@
+/*
+ * Company.cpp
+ *
+ *  Created on: Jul 30, 2024
+ *      Author: pradh
+ */
+
+#include "Company.h"
+
+void Company::addDepartment(std::unique_ptr<Department> department)
+{
+}
+
+Department* Company::findDepartmentByName(const std::string &name)
+{
+}

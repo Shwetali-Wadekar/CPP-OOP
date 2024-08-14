@@ -1,0 +1,15 @@
+/*
+ * BookCatalog.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef BOOKCATALOG_H_
+#define BOOKCATALOG_H_
+
+class BookCatalog
+{
+};
+
+#endif /* BOOKCATALOG_H_ */

@@ -1,0 +1,15 @@
+/*
+ * User.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef USER_H_
+#define USER_H_
+
+class User
+{
+};
+
+#endif /* USER_H_ */

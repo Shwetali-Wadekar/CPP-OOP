@@ -1,0 +1,21 @@
+/*
+ * AntiqueItem.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "AntiqueItem.h"
+
+AntiqueItem::AntiqueItem(const std::string &itemId, const std::string &name,
+		const std::string &description, double startingPrice)
+{
+}
+
+std::string AntiqueItem::getItemType() const
+{
+}
+
+void AntiqueItem::displayInfo() const
+{
+}

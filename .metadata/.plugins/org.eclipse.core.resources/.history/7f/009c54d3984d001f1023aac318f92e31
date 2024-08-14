@@ -1,0 +1,36 @@
+/*
+ * Book.cpp
+ *
+ *  Created on: 29 Jul 2024
+ *      Author: hp
+ */
+
+#include "Book.h"
+
+Book::Book(std::string id, std::string title, std::string author)
+{
+}
+
+std::string Book::getId() const
+{
+}
+
+std::string Book::getTitle() const
+{
+}
+
+std::string Book::getAuthor() const
+{
+}
+
+bool Book::getIsBorrowed() const
+{
+}
+
+void Book::setBorrowed(bool borrowed)
+{
+}
+
+Poco::JSON::Object::Ptr Book::toJson() const
+{
+}

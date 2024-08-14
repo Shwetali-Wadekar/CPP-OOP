@@ -1,0 +1,28 @@
+/*
+ * Event.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Event.h"
+
+Event::Event(const std::string &title, const std::string &description)
+{
+}
+
+std::string Event::getTitle() const
+{
+}
+
+std::string Event::getDescription() const
+{
+}
+
+void Event::display(const std::string &format) const
+{
+}
+
+std::string Event::formatDetails(const std::string &format) const
+{
+}

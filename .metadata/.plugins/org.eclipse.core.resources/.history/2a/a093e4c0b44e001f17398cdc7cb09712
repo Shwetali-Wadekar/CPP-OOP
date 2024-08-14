@@ -1,0 +1,6 @@
+
+#include "DeviceException.h"
+
+DeviceException::DeviceException(const std::string &message) : std::invalid_argument("f")
+{
+}

@@ -1,0 +1,24 @@
+/*
+ * Vehicle.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#include "Vehicle.h"
+
+Vehicle::Vehicle(std::string model, float mileage, int capacity)
+{
+}
+
+std::string Vehicle::getModel() const
+{
+}
+
+float Vehicle::getMileage() const
+{
+}
+
+int Vehicle::getCapacity() const
+{
+}

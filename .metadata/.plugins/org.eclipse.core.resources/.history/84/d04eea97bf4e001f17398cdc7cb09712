@@ -1,0 +1,31 @@
+/*
+ * HRManager.cpp
+ *
+ *  Created on: Jul 30, 2024
+ *      Author: pradh
+ */
+
+#include "HRManager.h"
+
+HRManager::HRManager(const std::string &name, Company &company)
+{
+}
+
+std::string HRManager::getName() const
+{
+}
+
+void HRManager::addDepartmentToCompany(const std::string &departmentName)
+{
+}
+
+void HRManager::addEmployeeToDepartment(const std::string &departmentName,
+		const std::string &employeeName, const std::string &employeeId,
+		float salary)
+{
+}
+
+void HRManager::removeEmployeeFromDepartment(const std::string &departmentName,
+		const std::string &employeeId)
+{
+}

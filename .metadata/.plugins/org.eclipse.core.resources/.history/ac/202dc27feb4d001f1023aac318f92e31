@@ -1,0 +1,28 @@
+/*
+ * Library.cpp
+ *
+ *  Created on: 28 Jul 2024
+ *      Author: devma
+ */
+
+#include "Library.h"
+#include "Book.h"
+#include "Member.h"
+
+   // std::map<std::string, std::unique_ptr<Book>> books;
+
+Book* Library::addBook(const std::string &title, const std::string &author)
+{
+	std::unique_ptr<Book> book(new Book(std::to_string(this->nextBookNumber),title,author));
+	Book* bookPtr=book.get();
+	books.insert(std::make_pair(bookPtr->getId(),std::move(book)));
+	return bookPtr;
+}
+
+Book* Library::lookupBook(const std::string &id) const
+{
+}
+
+std::vector<Book*> Library::allBooks() const
+{
+}

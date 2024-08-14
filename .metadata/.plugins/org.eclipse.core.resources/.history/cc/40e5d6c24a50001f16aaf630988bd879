@@ -1,0 +1,15 @@
+/*
+ * Appliance.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef APPLIANCE_H_
+#define APPLIANCE_H_
+
+class Appliance
+{
+};
+
+#endif /* APPLIANCE_H_ */

@@ -1,0 +1,25 @@
+/*
+ * Book.cpp
+ *
+ *  Created on: 28 Jul 2024
+ *      Author: devma
+ */
+
+#include "Book.h"
+
+Book::Book(const std::string &id, const std::string &title,
+		const std::string &author)
+{
+}
+
+std::string Book::getId() const
+{
+}
+
+std::string Book::getTitle() const
+{
+}
+
+std::string Book::getAuthor() const
+{
+}

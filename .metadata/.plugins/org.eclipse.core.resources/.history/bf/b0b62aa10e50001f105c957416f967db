@@ -1,0 +1,144 @@
+/*
+ * tests.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+
+
+#include "University.h"
+#include "Department.h"
+#include "Professor.h"
+#include "Course.h"
+#include "Student.h"
+#include<iostream>
+using namespace std;
+
+/**
+ * Outputs the failedMessage on the console if condition is false.
+ *
+ * @param condition the condition
+ * @param failedMessage the message
+ */
+void assertTrue(bool condition, string failedMessage) {
+    if (!condition) {
+        cout << failedMessage << endl;
+    }
+}
+
+/**
+ * Tests for the University system classes. (XX points)
+ */
+void universitySystemTests() {
+    /*
+     * (1) Create a university "Tech University" with departments "Computer Science", "Mathematics", and "Physics".
+     *     Add professors "Prof. Alice" and "Prof. Bob" to "Computer Science", and "Prof. Charlie" to "Mathematics".
+     *     Add courses "Algorithms", "Data Structures" to "Computer Science", and "Calculus" to "Mathematics".
+     *     Enroll students "Student1" and "Student2" in "Algorithms", and "Student3" in "Calculus".
+     *     Assign grades to students and verify GPA calculations.
+     *     Use assertions to verify that the university, departments, professors, courses, and students are correctly added and related.
+     *     (30 points)
+     */
+    // TODO
+	University hda("Tech University");
+	Department* cs=new Department("Computer Science");
+	Department* py=new Department("Physics");
+	Department* ma=new Department("Mathematics");
+
+
+	hda.addDepartment(std::unique_ptr<Department>(cs));
+	hda.addDepartment(std::unique_ptr<Department>(py));
+	hda.addDepartment(std::unique_ptr<Department>(ma));
+
+
+	//cs->addProfessor()
+}
+
+/**
+ * Tests for the Department class. (XX points)
+ */
+void departmentTests() {
+    /*
+     * (1) Create a department "Biology" and add professors "Prof. Eve" and "Prof. Frank".
+     *     Add courses "Genetics" and "Microbiology" and enroll students "Student4" and "Student5" in them.
+     *     Verify the relationships using assertions.
+     *     (25 points)
+     */
+    // TODO
+}
+
+/**
+ * Tests for the Professor class. (XX points)
+ */
+void professorTests() {
+    /*
+     * (1) Create a professor "Prof. Grace" and add courses "Machine Learning" and "Artificial Intelligence".
+     *     Add specialties "AI" and "Data Science".
+     *     Verify that the professor's courses and specialties are correctly added.
+     *     (20 points)
+     */
+    // TODO
+}
+
+/**
+ * Tests for the Course class. (XX points)
+ */
+void courseTests() {
+    /*
+     * (1) Create a course "Databases" and enroll students "Student6" and "Student7".
+     *     Assign grades and verify GPA calculations.
+     *     Verify that the students are correctly enrolled and graded using assertions.
+     *     (15 points)
+     */
+    // TODO
+	Course course("Databases");
+	shared_ptr<Student> student6(new Student(6,"Student6"));
+
+}
+
+/**
+ * Tests for the Student class. (XX points)
+ */
+void studentTests() {
+    /*
+     * (1) Create a student with ID 2345 and name "Jane Doe".
+     *     Enroll the student in multiple courses and assign grades.
+     *     Verify the student's ID, name, and GPA using assertions.
+     *     (10 points)
+     */
+    // TODO
+
+	Student jane(2345,"Jane Doe");
+	Course* c1= new Course("cs");
+	Course* c2= new Course("maths");
+
+	jane.addGrade(c1,'A');
+	jane.addGrade(c2,'C');
+
+	assertTrue(jane.getName()=="Jane Doe","name not matched");
+	assertTrue(jane.getId()==2345,"ID not matched");
+	assertTrue(jane.getGPA(c1)==4,"gpa not matched");
+}
+
+/**
+ * Comprehensive tests involving multiple relationships. (XX points)
+ */
+void comprehensiveTests() {
+    /*
+     * (1) Create a university "Global University" with multiple departments and establish relationships
+     *     among professors, courses, and students. Verify the complex relationships and interactions.
+     *     (20 points)
+     */
+    // TODO
+}
+
+void allTests() {
+    universitySystemTests();
+    departmentTests();
+    professorTests();
+    courseTests();
+    studentTests();
+    comprehensiveTests();
+}
+

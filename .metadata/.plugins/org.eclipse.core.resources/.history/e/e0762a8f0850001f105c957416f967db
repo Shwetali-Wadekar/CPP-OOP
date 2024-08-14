@@ -1,0 +1,40 @@
+/*
+ * Department.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Department.h"
+
+Department::Department(std::string name)
+{
+}
+
+void Department::addProfessor(std::unique_ptr<Professor> professor)
+{
+}
+
+void Department::addCourse(std::unique_ptr<Course> course)
+{
+}
+
+std::string Department::getName() const
+{
+}
+
+std::vector<Professor*> Department::getProfessors() const
+{
+}
+
+std::vector<Course*> Department::getCourses() const
+{
+}
+
+Professor* Department::findProfessor(const std::string &name) const
+{
+}
+
+Course* Department::findCourse(const std::string &name) const
+{
+}

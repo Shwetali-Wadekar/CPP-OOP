@@ -1,0 +1,46 @@
+/*
+ * tests.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+
+
+
+#include "VehicleFleet.h"
+#include "FleetManager.h"
+#include"Vehicle.h"
+#include"ElectricVehicle.h"
+
+void allTests() {
+    // Create various vehicles
+    // Create instances of Vehicle and ElectricVehicle with different parameters
+	std::shared_ptr<Vehicle> ola(new ElectricVehicle("olas1",120,200,1000));
+	std::shared_ptr<Vehicle> either(new ElectricVehicle("eitherLXI",150,250,1500));
+
+    // Create a vehicle fleet and add vehicles to it
+    // Add the created vehicles to an instance of VehicleFleet
+	std::shared_ptr<VehicleFleet> fleet(new VehicleFleet());
+	fleet->addVehicle(ola);
+	fleet->addVehicle(either);
+
+    // Create a transport company with the fleet
+    // Initialize a TransportCompany with the created VehicleFleet
+	TransportCompany company("sai ram fleet management",fleet);
+
+
+    // Verify total mileage and capacity
+    // Use assert to check if the total mileage and capacity are correct
+	cout<<company.totalFleetMileage();
+
+    // Create another company with a different fleet
+    // Add different vehicles to another instance of VehicleFleet
+    // Initialize another TransportCompany with this new fleet
+
+    // Create a fleet manager and add companies
+    // Add both TransportCompany instances to a FleetManager
+
+    // Verify companies in manager
+    // Use assert to check if the companies are correctly added and retrievable by name
+}

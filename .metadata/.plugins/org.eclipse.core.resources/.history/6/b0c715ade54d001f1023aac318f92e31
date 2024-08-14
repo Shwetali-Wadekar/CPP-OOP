@@ -1,0 +1,20 @@
+/*
+ * Member.cpp
+ *
+ *  Created on: 28 Jul 2024
+ *      Author: devma
+ */
+
+#include "Member.h"
+
+Member::Member(const std::string &id, const std::string &name)
+{
+}
+
+std::string Member::getId() const
+{
+}
+
+std::string Member::getName() const
+{
+}

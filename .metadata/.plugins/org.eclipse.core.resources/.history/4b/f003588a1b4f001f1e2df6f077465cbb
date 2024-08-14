@@ -1,0 +1,15 @@
+/*
+ * Item.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef ITEM_H_
+#define ITEM_H_
+
+class Item
+{
+};
+
+#endif /* ITEM_H_ */

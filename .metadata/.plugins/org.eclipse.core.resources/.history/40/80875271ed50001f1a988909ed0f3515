@@ -1,0 +1,25 @@
+/*
+ * EmployeeDatabase.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#include "EmployeeDatabase.h"
+
+void EmployeeDatabase::addEmployee(std::shared_ptr<Employee> employee)
+{
+}
+
+std::shared_ptr<Employee> EmployeeDatabase::findEmployeeById(int id) const
+{
+}
+
+std::map<int, std::shared_ptr<Employee> > EmployeeDatabase::getAllEmployees() const
+{
+}
+
+std::vector<std::shared_ptr<Employee> > EmployeeDatabase::findEmployeesByPrefix(
+		const std::string &prefix) const
+{
+}

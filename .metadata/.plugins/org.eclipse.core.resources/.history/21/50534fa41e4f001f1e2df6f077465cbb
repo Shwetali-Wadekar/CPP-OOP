@@ -1,0 +1,15 @@
+/*
+ * Order.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef ORDER_H_
+#define ORDER_H_
+
+class Order
+{
+};
+
+#endif /* ORDER_H_ */

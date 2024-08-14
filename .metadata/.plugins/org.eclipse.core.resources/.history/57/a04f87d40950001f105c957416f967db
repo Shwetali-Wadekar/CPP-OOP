@@ -1,0 +1,45 @@
+/*
+ * University.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "University.h"
+//#include "Department.h"
+//#include "Course.h"
+
+using namespace std;
+
+//    std::string name;
+//    std::vector<std::unique_ptr<Department>> departments;
+//    std::set<std::shared_ptr<Student>> students;
+University::University(std::string name) : name(name)
+{
+}
+//
+//void University::addDepartment(std::unique_ptr<Department> department)
+//{
+//	departments.push_back(move(department));
+//}
+//
+//void University::enrollStudent(std::shared_ptr<Student> student)
+//{
+//	student->
+//}
+//
+//std::string University::getName() const
+//{
+//}
+//
+//std::vector<Department*> University::getDepartments() const
+//{
+//}
+//
+//std::set<std::shared_ptr<Student> > University::getStudents() const
+//{
+//}
+//
+//Department* University::findDepartment(const std::string &name) const
+//{
+//}

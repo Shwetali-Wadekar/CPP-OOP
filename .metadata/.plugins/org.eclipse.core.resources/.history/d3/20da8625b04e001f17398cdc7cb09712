@@ -1,0 +1,26 @@
+
+#include "Speaker.h"
+
+Speaker::Speaker(const std::string &id, const std::string &name, int volume)
+{
+}
+
+void Speaker::setVolume(int level)
+{
+}
+
+int Speaker::getVolume() const
+{
+}
+
+void Speaker::turnOn()
+{
+}
+
+void Speaker::turnOff()
+{
+}
+
+bool Speaker::getStatus() const
+{
+}

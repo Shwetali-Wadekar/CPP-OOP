@@ -1,0 +1,79 @@
+// Standard (system) header files
+#include <iostream>
+#include <cstdlib>
+// Add more standard header files as required
+// #include <string>
+#include<Poco/JSON/Object.h>
+#include<Poco/JSON/Array.h>
+#include<Poco/JSON/Stringifier.h>
+
+#include<Poco/JSON/Parser.h>
+#include<Poco/Dynamic/Var.h>
+
+#include<sstream>
+#include<fstream>
+
+using namespace std;
+
+// Add your project's header files here
+// #include "CFraction.h"
+
+// Main program
+void jsonWrite(ostream &out) {
+
+
+
+}
+
+
+int main ()
+{
+    // TODO: Add your program code here
+	cout << "PocoConcepts started." << endl << endl;
+//	ofstream fb("data.json");
+//
+//	Poco::JSON:: Object::Ptr ptr=new Poco::JSON::Object;
+//
+//	ptr->set("name","bhavin");
+//	ptr->set("age",26);
+//	ptr->set("height",182);
+//
+//
+//	Poco::JSON:: Object::Ptr rutvikptr=new Poco::JSON::Object;
+//
+//	rutvikptr->set("name","rutvik");
+//	rutvikptr->set("age",24);
+//	rutvikptr->set("height",170);
+//
+//	Poco::JSON:: Object::Ptr mainptr=new Poco::JSON::Object;
+//
+//	Poco::JSON::Array::Ptr array=new Poco::JSON::Array;
+//
+//	array->add(ptr);
+//	array->add(rutvikptr);
+//
+//
+//	mainptr->set("students",array);
+//	Poco::JSON::Stringifier::stringify(mainptr,fb,2);
+//	cout<<mainptr->getValue<string>("students");
+//
+//	ofstream fb2("dataSimple.json");
+//	Poco::JSON::Stringifier::stringify(ptr,fb2,2);
+
+	ifstream readbuffer("dataSimple.json");
+	ostringstream oss;
+	oss<<readbuffer.rdbuf();
+
+	Poco::JSON::Parser parser;
+//	Poco::Dynamic::Var result=parser.parse(oss.str());
+//	Poco::JSON::Object::Ptr readptr=result.extract<Poco::JSON::Object::Ptr>();
+//
+//	if(readptr->has("name")) {
+//		cout<<readptr->getValue<string>("name");
+//	}
+
+
+	//jsonWrite(fb);
+
+	return 0;
+}

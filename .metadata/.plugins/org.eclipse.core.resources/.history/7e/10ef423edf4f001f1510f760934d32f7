@@ -1,0 +1,97 @@
+#include <iostream>
+#include <memory>
+#include "Room.h"
+#include "StandardRoom.h"
+#include "SuiteRoom.h"
+#include "Reservation.h"
+#include "ReservationManager.h"
+#include <iostream>
+
+using namespace std;
+/**
+ * Outputs the failedMessage on the console if condition is false.
+ *
+ * @param condition the condition
+ * @param failedMessage the message
+ */
+void assertTrue(bool condition, const std::string& failedMessage) {
+    if (!condition) {
+        std::cout << failedMessage << std::endl;
+    }
+}
+
+/**
+ * Tests for the Room classes. (20 points)
+ */
+void roomTests() {
+    // Create instances of StandardRoom and SuiteRoom.
+    // 1. Verify the initial availability status of the rooms.
+    // 2. Test the `bookRoom()` and `releaseRoom()` methods to ensure the room's status changes correctly.
+    // 3. Test additional functionality for SuiteRoom, such as getting additional charges.
+
+    // Add code to verify the above points and assert conditions accordingly.
+
+
+//	std::shared_ptr<SuiteRoom> suiteroom(new SuiteRoom("101",1250));
+//	std::shared_ptr<Room> standardroom(new StandardRoom("201"));
+
+
+
+	SuiteRoom suit("101",1250);
+	suit.bookRoom();
+	assertTrue(suit.isRoomAvailable()==0,"room should be booked");
+}
+
+/**
+ * Tests for the Reservation class. (20 points)
+ */
+void reservationTests() {
+    // Create instances of Reservation, Room (both StandardRoom and SuiteRoom).
+    // 1. Verify the reservation details such as ID, room number, and guest name.
+    // 2. Test the `cancelReservation()` method to ensure it releases the room correctly.
+
+    // Add code to verify the above points and assert conditions accordingly.
+
+		std::shared_ptr<SuiteRoom> suiteroom(new SuiteRoom("101",1250));
+		std::shared_ptr<Room> standardroom(new StandardRoom("201"));
+
+		Reservation res1("r1",suiteroom,"bhavin");
+		Reservation res2("r2",standardroom,"rutvik");
+
+		assertTrue(res1.getGuestName()=="bhavin","guest name not matched");
+		assertTrue(res1.getRoom()->getRoomNumber()==suiteroom->getRoomNumber(),"reservation room number not matched!");
+		assertTrue(res1.getRoom()->isRoomAvailable()==0,"room should be booked");
+
+		assertTrue(suiteroom->isRoomAvailable()==0,"room should be booked");
+
+
+
+
+}
+
+
+
+
+/**
+ * Tests for the ReservationManager class. (20 points)
+ */
+void reservationManagerTests() {
+    // Create instances of ReservationManager, Room (both StandardRoom and SuiteRoom), and Reservation.
+    // 1. Test adding and listing rooms and reservations.
+    // 2. Test booking a room and verify its availability status.
+    // 3. Test cancelling a reservation and verify the room is released and the reservation is removed.
+
+    // Add code to verify the above points and assert conditions accordingly.
+}
+
+void alltest() {
+    // Run tests for Room classes.
+    roomTests();
+
+    // Run tests for Reservation class.
+    reservationTests();
+
+    // Run tests for ReservationManager class.
+    reservationManagerTests();
+
+}

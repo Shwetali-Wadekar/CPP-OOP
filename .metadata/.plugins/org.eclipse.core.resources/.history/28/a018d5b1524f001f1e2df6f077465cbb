@@ -1,0 +1,21 @@
+/*
+ * User.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "User.h"
+
+User::User(const std::string &userId, const std::string &name,
+		const std::string &email, double balance)
+{
+}
+
+std::string User::getUserId() const
+{
+}
+
+double User::getBalance() const
+{
+}

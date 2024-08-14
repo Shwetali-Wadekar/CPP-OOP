@@ -1,0 +1,21 @@
+/*
+ * Member.cpp
+ *
+ *  Created on: 29 Jul 2024
+ *      Author: hp
+ */
+
+#include "Member.h"
+
+Member::Member(std::string id, std::string firstName, std::string lastName) : id(id) , firstName(firstName) ,lastName(lastName)
+{
+}
+
+std::string Member::getId() const
+{
+	return this->id;
+}
+
+void Member::borrowBook(Book *book)
+{
+}

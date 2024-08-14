@@ -1,0 +1,33 @@
+/*
+ * Book.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "Book.h"
+
+Book::Book(const string &title, const string &author, const string &isbn,
+		double price)
+{
+}
+
+string Book::getTitle() const
+{
+}
+
+string Book::getAuthor() const
+{
+}
+
+string Book::getIsbn() const
+{
+}
+
+double Book::getPrice() const
+{
+}
+
+void Book::setPrice(double newPrice)
+{
+}

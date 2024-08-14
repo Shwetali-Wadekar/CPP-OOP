@@ -1,0 +1,18 @@
+/*
+ * Auction.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "Auction.h"
+
+Auction::Auction(const std::string &auctionId,
+		const std::shared_ptr<Item> &item) : auctionId(auctionId) , item(item)
+{
+	highestBid=0;
+}
+
+double Auction::getHighestBid() const
+{
+}

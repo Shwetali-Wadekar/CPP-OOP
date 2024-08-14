@@ -1,0 +1,46 @@
+/*
+ * Member.cpp
+ *
+ *  Created on: 29 Jul 2024
+ *      Author: hp
+ */
+
+#include "Member.h"
+#include "Book.h"
+#include <algorithm>
+
+Member::Member(std::string id, std::string firstName, std::string lastName) : id(id) , firstName(firstName) ,lastName(lastName)
+{
+}
+
+std::string Member::getId() const
+{
+	return this->id;
+}
+
+void Member::borrowBook(Book *book)
+{
+	if(book->getIsBorrowed()== false) {
+		book->setBorrowed(true);
+		borrowedBooks.push_back(book);
+	}
+}
+
+void Member::returnBook(Book *book)
+{
+	auto dummyIter= borrowedBooks.begin() ;
+	for(auto iter= borrowedBooks.begin() ; iter != borrowedBooks.end() ; ++iter) {
+		if((**iter).id == book->getId()) {
+			dummyIter= iter;
+			break;
+		}
+	}
+	if( dummyIter != borrowedBooks.end()) {
+
+	}
+}
+
+std::vector<Book*> Member::getBorrowedBooks() const
+{
+	return borrowedBooks;
+}

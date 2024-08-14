@@ -1,0 +1,21 @@
+/*
+ * FleetManager.cpp
+ *
+ *  Created on: 2 Aug 2024
+ *      Author: hp
+ */
+
+#include "FleetManager.h"
+
+FleetManager& FleetManager::addCompany(
+		std::unique_ptr<TransportCompany> &&company)
+{
+}
+
+std::vector<TransportCompany*> FleetManager::getCompanies() const
+{
+}
+
+TransportCompany* FleetManager::findCompanyByName(std::string name) const
+{
+}

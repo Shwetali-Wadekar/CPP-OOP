@@ -1,0 +1,15 @@
+/*
+ * AuctionManager.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef AUCTIONMANAGER_H_
+#define AUCTIONMANAGER_H_
+
+class AuctionManager
+{
+};
+
+#endif /* AUCTIONMANAGER_H_ */

@@ -1,0 +1,39 @@
+/*
+ * Utils.cpp
+ *
+ *  Created on: Jul 29, 2024
+ *      Author: pradh
+ */
+
+#include "Utils.h"
+#include <iostream>
+#include <stdexcept>
+std::string Utils::toUpperCase(const std::string &str)
+{
+	std::string uppercaseStr="";
+	for( size_t i = 0 ; i < str.size() ; ++i) {
+		uppercaseStr.push_back(std::toupper(str[i]));
+	}
+	return uppercaseStr;
+}
+
+bool Utils::isValidFloat(const std::string &str)
+{
+	float a= std::stof(str);
+	if(typeid(a)==typeid(float)) {
+		return true;
+	}
+	return false;
+	//return std::is_floating_point(std::stof(str));
+}
+//Utils::Utils()
+//{
+//	// TODO Auto-generated constructor stub
+//
+//}
+//
+//Utils::~Utils()
+//{
+//	// TODO Auto-generated destructor stub
+//}
+//

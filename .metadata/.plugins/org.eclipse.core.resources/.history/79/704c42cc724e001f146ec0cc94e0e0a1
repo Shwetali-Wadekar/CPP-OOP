@@ -1,0 +1,29 @@
+/*
+ * RentalRecord.cpp
+ *
+ *  Created on: Jul 30, 2024
+ *      Author: pradh
+ */
+
+#include "RentalRecord.h"
+
+RentalRecord::RentalRecord(Vehicle *vehicle, Customer *customer,
+		const Poco::DateTime &rentalDate, const Poco::DateTime &returnDate)
+{
+}
+
+Vehicle* RentalRecord::getVehicle() const
+{
+}
+
+Customer* RentalRecord::getCustomer() const
+{
+}
+
+Poco::DateTime RentalRecord::getRentalDate() const
+{
+}
+
+Poco::DateTime RentalRecord::getReturnDate() const
+{
+}

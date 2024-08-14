@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\H_DA\sem4\APT\examSolutions2\GPT-University"/>
+			<item value=""/>
+			<item value="D:\H_DA\sem4\APT\examSolutions2\GPT-OnlineAuctionSystem"/>
+			<item value="D:\H_DA\sem4\APT\examSolutions2\Dev_ElectronicDevices"/>
+			<item value="D:\H_DA\sem4\APT\examSolutions2\Exam-2023SoSe"/>
+			<item value="D:\H_DA\sem4\APT\examSolutions2\GPT-LibraryEasy"/>
+			<item value="D:\H_DA\sem4\APT\examSolutions2\Exam-2022SoSe"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\hp\Downloads\Advanced Warehouse Management System_GPTGenerated.zip"/>
+			<item value="D:\H_DA\sem4\emptypapers\Advanced Healthcare Management System.zip"/>
+			<item value="C:\Users\hp\Downloads\Advanced Healthcare Management_ GPTGenerated.zip"/>
+			<item value="C:\Users\hp\Downloads\Employee_Management_GPTGenerated.zip"/>
+			<item value="C:\Users\hp\Downloads\Dev_ElectronicDevices.zip"/>
+			<item value="C:\Users\hp\Downloads\Advanced Vehicle Rental Management System_GPTGenerated.zip"/>
+			<item value="C:\Users\hp\Downloads\Dev_Library.zip"/>
+			<item value="C:\Users\hp\Downloads\ShoppingManagement.zip"/>
+			<item value="C:\Users\hp\Downloads\2022WiSe-APT-1-Project (1).zip"/>
+			<item value="D:\H_DA\sem4\exams\2. 2023SoSe\Exam-2023SoSe.zip"/>
+			<item value="D:\H_DA\sem4\emptypapers\2023WiSe.zip"/>
+		</list>
+	</section>
+</section>

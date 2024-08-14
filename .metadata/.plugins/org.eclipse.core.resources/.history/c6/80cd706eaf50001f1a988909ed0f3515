@@ -1,0 +1,20 @@
+/*
+ * Bird.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Bird.h"
+
+Bird::Bird(std::string name, int age, bool canFly)
+{
+}
+
+void Bird::makeSound() const
+{
+}
+
+bool Bird::getCanFly() const
+{
+}

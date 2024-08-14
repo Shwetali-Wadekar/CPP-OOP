@@ -1,0 +1,21 @@
+#include "HomeController.h"
+
+void HomeController::addDevice(std::unique_ptr<Device> device)
+{
+}
+
+Device* HomeController::getDevice(const std::string &id) const
+{
+}
+
+void HomeController::turnOnAllDevices()
+{
+}
+
+void HomeController::turnOffAllDevices()
+{
+}
+
+std::vector<bool> HomeController::getAllStatuses() const
+{
+}

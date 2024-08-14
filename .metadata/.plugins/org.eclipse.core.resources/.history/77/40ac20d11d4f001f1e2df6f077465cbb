@@ -1,0 +1,17 @@
+/*
+ * DuplicateSensorName.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef DUPLICATESENSORNAME_H_
+#define DUPLICATESENSORNAME_H_
+
+#include <stdexcept>
+
+class DuplicateSensorName: public std::invalid_argument
+{
+};
+
+#endif /* DUPLICATESENSORNAME_H_ */

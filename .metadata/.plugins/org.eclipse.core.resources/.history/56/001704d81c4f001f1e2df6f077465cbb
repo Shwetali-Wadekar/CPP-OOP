@@ -1,0 +1,151 @@
+/*
+ * tests.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+
+#include <iostream>
+#include <memory>
+#include <thread>
+#include <chrono>
+#include "User.h"
+#include "Item.h"
+#include "Auction.h"
+#include "Bid.h"
+#include "AuctionManager.h"
+#include <Poco/JSON/Parser.h>
+#include <Poco/JSON/Stringifier.h>
+
+using namespace std;
+
+// Function prototypes for testing
+void testUser();
+void testItem();
+void testAuction();
+void testBid();
+void testAuctionManager();
+void testPerformance();
+void testExceptionHandling();
+
+
+
+// Test cases for User class
+void testUser() {
+    // Test constructor and getters
+    // 1. Create a Buyer object with specific attributes.
+    // 2. Verify that the attributes (userId, balance) are correctly set.
+
+    // Test balance update
+    // 1. Update the balance by a certain amount (e.g., decrease).
+    // 2. Verify that the balance is updated correctly.
+
+    // Test pure virtual method
+    // 1. Verify that the overridden method (getUserRole) returns the expected result for a Buyer.
+
+    // Test displayInfo (requires visual verification)
+    // 1. Call displayInfo and visually verify the output for correctness.
+
+    // Test JSON conversion
+    // 1. Convert the User object to JSON.
+    // 2. Verify that the JSON contains expected fields (e.g., userId).
+}
+
+// Test cases for Item class
+void testItem() {
+    // Test constructor and getters
+    // 1. Create an Item object (e.g., AntiqueItem) with specific attributes.
+    // 2. Verify that the attributes (itemId, startingPrice) are correctly set.
+
+    // Test pure virtual method
+    // 1. Verify that the overridden method (getItemType) returns the expected result for an AntiqueItem.
+
+    // Test displayInfo (requires visual verification)
+    // 1. Call displayInfo and visually verify the output for correctness.
+
+    // Test JSON conversion
+    // 1. Convert the Item object to JSON.
+    // 2. Verify that the JSON contains expected fields (e.g., itemId).
+}
+
+// Test cases for Auction class
+void testAuction() {
+    // Test bid placement
+    // 1. Create an Auction object with a specific Item.
+    // 2. Create a Buyer object.
+    // 3. Place a bid on the Auction by the Buyer.
+    // 4. Verify that the highest bid and highest bidder are correctly updated.
+
+    // Test ending the auction
+    // 1. End the auction and verify that the result (winner) is as expected.
+
+    // Test JSON conversion
+    // 1. Convert the Auction object to JSON.
+    // 2. Verify that the JSON contains expected fields (e.g., auctionId).
+}
+
+// Test cases for Bid class
+void testBid() {
+    // Test getters
+    // 1. Create a Bid object with specific Buyer and amount.
+    // 2. Verify that the getters return the correct Buyer and amount.
+
+    // Test JSON conversion
+    // 1. Convert the Bid object to JSON.
+    // 2. Verify that the JSON contains expected fields (e.g., amount).
+}
+
+// Test cases for AuctionManager class
+void testAuctionManager() {
+    // Test starting auctions
+    // 1. Create multiple Item objects.
+    // 2. Start auctions for these items using AuctionManager.
+    // 3. Verify that the auctions are correctly started.
+
+    // Test placing bids
+    // 1. Place bids on multiple auctions through AuctionManager.
+    // 2. Verify that the bids are correctly processed.
+
+    // Test ending auctions
+    // 1. End multiple auctions through AuctionManager.
+    // 2. Verify that the correct winners are determined.
+
+    // Test getting active auctions
+    // 1. Retrieve active auctions from AuctionManager.
+    // 2. Verify that no active auctions exist after all are ended.
+
+    // Test JSON conversion
+    // 1. Convert AuctionManager state to JSON.
+    // 2. Verify that the JSON contains expected fields (e.g., auctions list).
+}
+
+// Performance test cases
+void testPerformance() {
+    // Simulate high load
+    // 1. Create an Item and start an auction for it.
+    // 2. Simulate placing a large number of bids in a multithreaded environment.
+    // 3. Measure and report the time taken for processing.
+
+    // Test performance metrics
+    // 1. Ensure that performance meets acceptable thresholds (e.g., execution time).
+}
+
+// Exception handling test cases
+void testExceptionHandling() {
+    // Test invalid operations
+    // 1. Attempt to place a bid with an invalid auction ID.
+    // 2. Attempt to end an auction with an invalid auction ID.
+    // 3. Verify that appropriate exceptions are thrown and handled.
+}
+
+void alltests(){
+    // Run all test functions
+    testUser();
+    testItem();
+    testAuction();
+    testBid();
+    testAuctionManager();
+    testPerformance();
+    testExceptionHandling();
+}

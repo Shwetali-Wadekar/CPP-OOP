@@ -1,0 +1,29 @@
+/*
+ * Product.cpp
+ *
+ *  Created on: Aug 1, 2024
+ *      Author: pradh
+ */
+
+#include "Product.h"
+
+Product::Product(const std::string &name, const std::string &productId,
+		float price)
+{
+}
+
+std::string Product::getName() const
+{
+}
+
+std::string Product::getProductId() const
+{
+}
+
+float Product::getPrice() const
+{
+}
+
+void Product::setPrice(float price)
+{
+}

@@ -1,0 +1,15 @@
+/*
+ * Bid.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef BID_H_
+#define BID_H_
+
+class Bid
+{
+};
+
+#endif /* BID_H_ */

@@ -1,0 +1,24 @@
+/*
+ * SuiteRoom.cpp
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#include "SuiteRoom.h"
+
+SuiteRoom::SuiteRoom(const std::string &number, int charges)
+{
+}
+
+void SuiteRoom::bookRoom()
+{
+}
+
+void SuiteRoom::releaseRoom()
+{
+}
+
+int SuiteRoom::getAdditionalCharges() const
+{
+}

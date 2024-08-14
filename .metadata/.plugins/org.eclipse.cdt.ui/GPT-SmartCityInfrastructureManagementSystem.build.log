@@ -1,0 +1,7 @@
+00:26:48 **** Incremental Build of configuration Debug for project GPT-SmartCityInfrastructureManagementSystem ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\test.o" "..\\myCode\\test.cpp" 
+g++ -o GPT-SmartCityInfrastructureManagementSystem.exe "myCode\\Building.o" "myCode\\CityManager.o" "myCode\\InfrastructureElement.o" "myCode\\MaintenanceScheduler.o" "myCode\\Road.o" "myCode\\TrafficLight.o" "myCode\\main.o" "myCode\\test.o" 
+
+00:26:49 Build Finished. 0 errors, 0 warnings. (took 643ms)
+

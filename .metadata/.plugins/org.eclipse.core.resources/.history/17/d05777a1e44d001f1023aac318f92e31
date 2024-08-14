@@ -1,0 +1,33 @@
+/*
+ * Book.cpp
+ *
+ *  Created on: 28 Jul 2024
+ *      Author: devma
+ */
+
+#include "Book.h"
+#include "Member.h"
+Book::Book(const std::string &id, const std::string &title,
+		const std::string &author) : id(id) , title(title) , author(author)
+{
+}
+
+std::string Book::getId() const
+{
+	return this->id;
+}
+
+std::string Book::getTitle() const
+{
+	return this->title;
+}
+
+std::string Book::getAuthor() const
+{
+	return this->author;
+}
+
+void Book::borrowBook(std::shared_ptr<Member> member)
+{
+	this->borrowedBy= member;
+}

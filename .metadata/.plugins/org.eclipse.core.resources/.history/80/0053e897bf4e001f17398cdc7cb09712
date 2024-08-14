@@ -1,0 +1,30 @@
+/*
+ * Department.cpp
+ *
+ *  Created on: Jul 30, 2024
+ *      Author: pradh
+ */
+
+#include "Department.h"
+
+Department::Department(const std::string &name) :name(name)
+{
+}
+
+std::string Department::getName() const
+{
+	return name;
+}
+
+void Department::addEmployee(std::unique_ptr<Employee> employee)
+{
+	employees.push_back(std::move(employee));
+}
+
+void Department::removeEmployee(const std::string &id)
+{
+}
+
+Employee* Department::findEmployeeById(const std::string &id)
+{
+}

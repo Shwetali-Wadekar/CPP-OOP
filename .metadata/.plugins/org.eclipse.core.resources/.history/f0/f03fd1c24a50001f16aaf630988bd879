@@ -1,0 +1,15 @@
+/*
+ * ComplexAppliance.h
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#ifndef COMPLEXAPPLIANCE_H_
+#define COMPLEXAPPLIANCE_H_
+
+class ComplexAppliance
+{
+};
+
+#endif /* COMPLEXAPPLIANCE_H_ */

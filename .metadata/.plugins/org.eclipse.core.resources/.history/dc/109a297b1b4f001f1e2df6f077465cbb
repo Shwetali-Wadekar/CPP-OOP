@@ -1,0 +1,17 @@
+/*
+ * Seller.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef SELLER_H_
+#define SELLER_H_
+
+#include "User.h"
+
+class Seller: public User
+{
+};
+
+#endif /* SELLER_H_ */

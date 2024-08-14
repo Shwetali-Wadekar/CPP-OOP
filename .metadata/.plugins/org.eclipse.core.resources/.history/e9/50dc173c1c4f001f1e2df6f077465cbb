@@ -1,0 +1,15 @@
+/*
+ * Auction.h
+ *
+ *  Created on: 31 Jul 2024
+ *      Author: hp
+ */
+
+#ifndef AUCTION_H_
+#define AUCTION_H_
+
+class Auction
+{
+};
+
+#endif /* AUCTION_H_ */

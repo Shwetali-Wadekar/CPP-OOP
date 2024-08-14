@@ -1,0 +1,70 @@
+/*
+ * Zoo.cpp
+ *
+ *  Created on: 1 Aug 2024
+ *      Author: hp
+ */
+
+#include "Zoo.h"
+//    std::vector<std::unique_ptr<Animal>> animals;
+//    std::map<std::string, int> animalCount; // animal type to count
+//    std::set<std::string> animalTypes; // distinct types of animals
+Zoo::Zoo(std::string name) : name(name)
+{
+}
+
+void Zoo::addAnimal(std::unique_ptr<Animal> animal)
+{
+	animals.push_back(move(animal));
+}
+
+std::string Zoo::getName() const
+{
+	return name;
+}
+
+std::vector<Animal*> Zoo::getAnimals() const
+{
+	std::vector<Animal*> allAnimals;
+	for(auto iter = animals.begin() ; iter != animals.end() ; ++iter) {
+		allAnimals.push_back((*iter).get());
+	}
+	return allAnimals;
+}
+
+std::map<std::string, int> Zoo::countAnimals() const
+{
+	return animalCount;
+
+}
+
+std::string Zoo::findOldestAnimal() const
+{
+	int age=0;
+	auto oldestAnimal=animals.begin();
+
+	for(auto iter = animals.begin() ; iter != animals.end() ; ++iter) {
+		int age=(*iter)->getAge();
+//		if((*iter)->getAge()>age) {
+//			age=(*iter)->getAge();
+//			oldestAnimal=iter;
+//		}
+
+	}
+}
+
+bool Zoo::searchAnimalByName(const std::string &name) const
+{
+}
+
+std::set<std::string> Zoo::findAnimalTypesByCount(int threshold) const
+{
+}
+
+double Zoo::calculateAverageAge() const
+{
+}
+
+std::vector<std::string> Zoo::sortAnimalsByAge() const
+{
+}
