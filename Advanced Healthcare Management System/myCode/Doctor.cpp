@@ -1,13 +1,7 @@
-/*
- * Doctor.cpp
- *
- *  Created on: Aug 1, 2024
- *      Author: pradh
- */
-
 #include "Doctor.h"
 #include "HealthcareException.h"
-Doctor::Doctor(const std::string &name, const std::string &doctorId) : name(name) , doctorId(doctorId)
+Doctor::Doctor(const std::string &name, const std::string &doctorId) :
+		name(name), doctorId(doctorId)
 {
 }
 
@@ -24,49 +18,40 @@ std::string Doctor::getDoctorId() const
 void Doctor::addPatient(std::unique_ptr<Patient> patient)
 {
 	patients.push_back(std::move(patient));
+
 }
 
 void Doctor::removePatient(const std::string &patientId)
-{	auto foundIter=patients.begin();
-	bool flag=false;
-	for(auto iter = patients.begin() ; iter != patients.end() ; ++iter) {
-
-		if(patientId==(*iter)->getPatientId()) {
-			flag=true;
-			foundIter=iter;
+{
+	for (auto iter = patients.begin(); iter != patients.end(); iter++)
+	{
+		if (patientId == (*iter)->getPatientId())
+		{
+			iter = patients.erase(iter);
+			return;
 		}
-
 	}
-	if(flag){
-	patients.erase(foundIter);
-
-	}else {
-		throw HealthcareException("patient does not exist");
-	}
+	throw HealthcareException("Patient not found");
 }
 
 Patient* Doctor::findPatientById(const std::string &patientId)
 {
-	for(auto iter = patients.begin() ; iter != patients.end() ; ++iter) {
-
-		if(patientId==(*iter)->getPatientId()) {
-
-			return (*iter).get();
+	for (auto &patient : patients)
+	{
+		if (patientId == patient->getPatientId())
+		{
+			return patient.get();
 		}
-
 	}
 	return nullptr;
-
+	throw HealthcareException("Patient not found");
 }
 
 std::vector<Patient*> Doctor::allPatients()
 {
-	std::vector<Patient*> docAllPatients;
-
-	for(auto iter = patients.begin() ; iter != patients.end() ; ++iter) {
-		docAllPatients.push_back((*iter).get());
+	std::vector<Patient*> allpatients;
+	for (auto &patient:patients){
+		allpatients.push_back(patient.get());
 	}
-
-
-	return docAllPatients;
+ return allpatients;
 }

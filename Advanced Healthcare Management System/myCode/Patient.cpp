@@ -1,9 +1,3 @@
-/*
- * Patient.cpp
- *
- *  Created on: Aug 1, 2024
- *      Author: pradh
- */
 
 #include "Patient.h"
 

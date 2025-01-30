@@ -1,27 +1,23 @@
-/*
- * Hospital.cpp
- *
- *  Created on: Aug 1, 2024
- *      Author: pradh
- */
-
 #include "Hospital.h"
+#include "HealthcareException.h"
 #include <sstream>
 using namespace std;
+
 void Hospital::addDoctor(std::unique_ptr<Doctor> doctor)
 {
 	doctors.push_back(std::move(doctor));
+
 }
 
 Doctor* Hospital::findDoctorById(const std::string &doctorId)
 {
-	for(auto iter=doctors.begin() ; iter != doctors.end() ; ++iter) {
-
-		if(doctorId == (*iter)->getDoctorId()) {
-			return (*iter).get();
+	for(auto &doctor:doctors){
+		if(doctorId == doctor->getDoctorId()){
+			return doctor.get();
 		}
 	}
 	return nullptr;
+	throw HealthcareException("Doctor not found");
 }
 
 std::string Hospital::generateDoctorReport() const
@@ -40,8 +36,8 @@ std::string Hospital::generateDoctorReport() const
 int Hospital::calculateTotalPatients() const
 {
 	int patientCount=0;
-	for(auto iter=doctors.begin() ; iter != doctors.end() ; ++iter) {
-		patientCount=patientCount+(*iter)->allPatients().size();
+	for (const auto& doctor:doctors){
+		patientCount+=doctor->allPatients().size();
 	}
 	return patientCount;
 }
